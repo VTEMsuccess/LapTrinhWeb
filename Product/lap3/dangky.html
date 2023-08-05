@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="vi">
+	<head>
+		<meta charset="utf-8">
+		<title>Đăng Ký</title>
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/vnd.microsoft.icon"> 
+		<link rel="stylesheet" type="text/css" href="File_CSS_tong_hop.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	</head>
+
+	<body> 
+		<header>
+			<a id="trangchu" href="trangchu.html">
+				<img src="images/logo.png">
+			</a> 
+			<nav class="nav">
+				<a href="trangchu.html">Trang Chủ</a>
+				<a href="gioithieu.html">Giới Thiệu</a>
+				<a href="sanpham.html">Sản Phẩm</a>
+				<a href="tintuc.html">Tin Tức</a>
+				<a href="dangnhap.html">Đăng Nhập</a>
+				<a href="dangky.html">Đăng Ký</a>
+				<a href="lienhe.html">Liên Hệ</a>
+				
+				<form class="fontAwesome" action="./timkiem.html" name="search" method="GET" onsubmit="return sentData()">
+					<input name="works" type="text" placeholder="Nhập nội dung cần tìm...">
+					<button id="iconAwesome" value="submit"><i class="fas fa-search search"></i></button>
+					<button id="iconAwesome" onclick="return goToCart()" class="fas fa-shopping-cart shoppingCart"></button>
+				</form>
+				
+			</nav>	
+			<div id="divAnimation1">
+				<img class="imgAnimation1" src="images/header-img1.png"/>
+			</div>
+			<div id="divAnimation2">
+				<img class="imgAnimation2" src="images/header-img2.png"/>
+			</div>
+			<div id="divAnimation3">
+				<img class="imgAnimation3" src="images/header-img3.png"/>
+			</div>
+		</header>
+
+		<main id="dk-main">
+			<article id="dk-article">
+				<h1>ĐĂNG KÝ</h1>
+				<form method="post" enctype="multipart/form-data" onsubmit="return Invalid(this)">
+					
+					<div>	
+						<label for="emailId"><i id="dk-iconAwesome" class="fas fa-envelope"></i></label>
+						<input id="emailId" name="email" type="text" placeholder="Vui lòng nhập email">
+					</div>
+					<div>		
+						<label for="passId1"><i id="dk-iconAwesome" class="fas fa-key"></i></label>
+						<input id="passId1" name="psw" type="password" placeholder="Vui lòng nhập mật khẩu">
+					</div>
+					<div>	
+						<label for="passId2"><i id="dk-iconAwesome" class="fas fa-key"></i></label>
+						<input id="passId2" name="psw1" type="password" placeholder="Vui lòng nhập lại mật khẩu">
+					</div>
+					<div>
+						<i id="dk-iconAwesome" class="fas fa-users"></i>
+						<input type="radio" name="capdotv">Bạc
+						<input type="radio" name="capdotv">Vàng
+						<input type="radio" name="capdotv">Bạch Kim
+					</div>
+					<div>
+						<i id="dk-iconAwesome" class="fas fa-share-square"></i>
+						<input type="file">
+					</div>
+					<div>
+						<span>Thông qua việc tạo tài khoản, bạn đồng ý với <a href="#">Điều khoản & Quyền riêng tư của chúng tôi.</a></span>	
+					</div>	
+					<div>
+						<input type="submit" value="Đăng Ký">
+						<input type="reset" value="Hủy">			
+					</div>		
+				</form>
+			</article>
+		</main>
+
+		<footer>
+			<p>&copy 2021 Bản quyền thuộc về FreeezeVN. 
+				<a id="footerAwesome" href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
+				<a id="footerAwesome" href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+				<a id="footerAwesome" href="https://pinterest.com"><i class="fab fa-pinterest"></i></a>
+				<a href="#trangchu"><img class="top" src="images/top.png" alt="vedautrang"></a>	
+			</p>
+		</footer>
+        <script type="text/javascript" src="./index.js"></script>
+	</body>	
+</html>

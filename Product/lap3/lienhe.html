@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="vi">
+	<head>
+		<meta charset="utf-8">
+		<title>Trang Chủ</title>
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/vnd.microsoft.icon"> 
+		<link rel="stylesheet" type="text/css" href="File_CSS_tong_hop.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	</head>
+
+	<body> 
+		<header>
+			<a id="trangchu" href="trangchu.html">
+				<img src="images/logo.png">
+			</a> 
+			<nav class="nav">
+					<a href="trangchu.html">Trang Chủ</a>
+					<a href="gioithieu.html">Giới Thiệu</a>
+					<a href="sanpham.html">Sản Phẩm</a>
+					<a href="tintuc.html">Tin Tức</a>
+					<a href="dangnhap.html">Đăng Nhập</a>
+					<a href="dangky.html">Đăng Ký</a>
+					<a href="lienhe.html">Liên Hệ</a>
+				
+                    <form class="fontAwesome" action="./timkiem.html" name="search" method="GET" onsubmit="return sentData()">
+                        <input name="works" type="text" placeholder="Nhập nội dung cần tìm...">
+                        <button id="iconAwesome" value="submit"><i class="fas fa-search search"></i></button>
+                        <button id="iconAwesome" onclick="return goToCart()" class="fas fa-shopping-cart shoppingCart"></button>
+                    </form>
+				
+			</nav>	
+				<div id="divAnimation1">
+					<img class="imgAnimation1" src="images/header-img1.png"/>
+				</div>
+				<div id="divAnimation2">
+					<img class="imgAnimation2" src="images/header-img2.png"/>
+				</div>
+				<div id="divAnimation3">
+					<img class="imgAnimation3" src="images/header-img3.png"/>
+				</div>
+		</header>
+
+		<main>
+			<article>
+				<h1>Liên Hệ</h1>
+				<span><i id="lh-iconAwesome1" class="fas fa-map-marker-alt"></i> <b>Địa chỉ: 0123, Tòa Nhà ABC, Thành Phố Cần Thơ</b> Nếu bạn có góp ý, vui lòng liên hệ bằng thư điện tử hoặc sử dụng biểu mẫu bên dưới. Xin cảm ơn.</span>
+
+				<h1>Góp Ý</h1>
+				<div class="lh-divForm">
+					<form id="lh-form" method="post" onsubmit="return Invalid(this)"
+					enctype="application/x-www-form-urlencoded">
+						<div>
+							<label for="HotenId"><i id="lh-iconAwesome2" class="fas fa-user"></i></label>
+							<input id="HotenId" name="yourName" type="text" placeholder="Vui lòng nhập họ tên của bạn">
+						</div>
+						<div>
+							<label for="EmailId"><i id="lh-iconAwesome2" class="fas fa-envelope"></i></label>
+							<input id=EmailId name="email" type="text" placeholder="Vui lòng nhập địa chỉ Email">
+						</div>
+						<div>
+							<i id="lh-iconAwesome2" class="fas fa-list"></i>
+							<select size="1">
+								<option>Về Sản Phẩm/ Dịch Vụ</option>
+								<option>Về Ưu Đãi Thành Viên</option>
+								<option>Về Tin Tuyển Dụng</option>
+							</select>
+						</div>
+						<div>
+							<i id="lh-iconAwesome2" class="fas fa-sticky-note"></i>
+							<textarea name="note" rows="7" cols="50" placeholder="Nội dung cần liên hệ"></textarea>
+						</div>
+						<div>	
+							<input type="submit" value="Gửi">
+						</div>	
+					</form>
+				</div>
+			</article>	
+		</main>
+
+		<footer>
+			<p>&copy 2021 Bản quyền thuộc về FreeezeVN. 
+				<a id="footerAwesome" href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
+				<a id="footerAwesome" href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+				<a id="footerAwesome" href="https://pinterest.com"><i class="fab fa-pinterest"></i></a>
+				<a href="#trangchu"><img class="top" src="images/top.png" alt="vedautrang"></a>	
+			</p>
+		</footer>
+        <script type="text/javascript" src="./index.js"></script>
+	</body>	
+</html>

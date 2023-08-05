@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="vi">
+	<head>
+		<meta charset="utf-8">
+		<title>Đơn Hàng</title>
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/vnd.microsoft.icon"> 
+		<link rel="stylesheet" type="text/css" href="File_CSS_tong_hop.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	</head>
+
+	<body onload="showCart()"> 
+		<header>
+			<a id="trangchu" href="trangchu.html">
+				<img src="images/logo.png">
+			</a> 
+			<nav class="nav">
+					<a href="trangchu.html">Trang Chủ</a>
+					<a href="gioithieu.html">Giới Thiệu</a>
+					<a href="sanpham.html">Sản Phẩm</a>
+					<a href="tintuc.html">Tin Tức</a>
+					<a href="dangnhap.html">Đăng Nhập</a>
+					<a href="dangky.html">Đăng Ký</a>
+					<a href="lienhe.html">Liên Hệ</a>
+				
+                    <form class="fontAwesome" action="./timkiem.html" name="search" method="GET" onsubmit="return sentData()">
+                        <input name="works" type="text" placeholder="Nhập nội dung cần tìm...">
+                        <button id="iconAwesome" value="submit"><i class="fas fa-search search"></i></button>
+                        <button id="iconAwesome" onclick="return goToCart()" class="fas fa-shopping-cart shoppingCart"></button>
+                    </form>
+				
+			</nav>	
+				<div id="divAnimation1">
+					<img class="imgAnimation1" src="images/header-img1.png"/>
+				</div>
+				<div id="divAnimation2">
+					<img class="imgAnimation2" src="images/header-img2.png"/>
+				</div>
+				<div id="divAnimation3">
+					<img class="imgAnimation3" src="images/header-img3.png"/>
+				</div>
+		</header>
+		
+		<main>
+			<article>
+				<h1>Chi tiết đơn hàng</h1>
+				<table border="3px" id="tableCart" width='100%'>
+					<thead>
+						<tr>
+							<th>Hình SP</th>
+							<th>Tên SP</th>
+							<th>Số lượng</th>
+							<th>Giá</th>
+							<th>Thành Tiền</th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody id="tbodyCart" align="center">
+						
+					</tbody>
+					<tfoot align="right">
+						<tr><td colspan="6">Tổng thành tiền (A) = <span id="dh-totalCost"></span></td></tr>
+						<tr><td colspan="6">Chiết Khấu (B) = 0.1 x A = <span id="dh-discount"></span></td></tr>
+						<tr><td colspan="6">Thuế (C) = 10% x (A - B) = <span id="dh-tax"></span></td></tr>
+						<tr><td colspan="6">Tổng đơn hàng = A - B + C = <span id="dh-totalCart"></span></td></tr>
+						<tr align="center"><td colspan="6"><button type="submit">Xác nhận đơn hàng</button></td></tr>
+					</tfoot>
+				</table>
+			</article>
+		</main>		
+		
+		<footer>
+            <p>&copy 2021 Bản quyền thuộc về FreeezeVN.
+				<a id="footerAwesome" href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+				<a id="footerAwesome" href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+				<a id="footerAwesome" href="https://pinterest.com"><i class="fab fa-pinterest"></i></a>
+				<a href="#logo"><img class="top" src="images/top.png" width="100" alt="vedautrang"></a>
+			</p>
+		</footer>
+        <script type="text/javascript" src="./index.js"></script>
+		</body>
+</html>
