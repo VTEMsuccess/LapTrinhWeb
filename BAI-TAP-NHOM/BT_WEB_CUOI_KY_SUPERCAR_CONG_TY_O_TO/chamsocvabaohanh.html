@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="img/logo/logo-shortcut-icon.png">
+        <title>SUPERCAR</title>  
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" type="text/css" href="index.css">
+
+        <!-- Link CSS ANIMATION cuộn mượt -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+
+        <script src="index.js" type="text/javascript"></script> 
+    </head>
+
+    <body>
+        <header>
+            <div class="headerUser">
+                <ul class="ulHeaderUser">
+                    <li>
+                        <a class="aFontColor aClickUser" onclick="clickToSignin()"><i class="fas fa-user"></i></a>
+                        <div id="divSignin">
+                            <h4 class="UserHere">Đăng nhập tài khoản SUPER CAR</h4>
+                            <p class="pRegisterHere UserHere">Đăng ký tại đây.</p>
+                            <div class="divSigninUser"><a class="aSigninUser" href="dangnhap.html">ĐĂNG NHẬP</a></div>
+                            <div class="divSigninUser"><a class="aRegisterUser" href="dangky.html">ĐĂNG KÝ</a></div>
+                        </div>
+                    </li>
+                    <li>
+                        <input class="searchHeader" type="text" name="search">
+                        <a class="aFontColor aClickUser" href="timkiem.html"><i class="fas fa-search"></i></a>
+                    </li>  
+                </ul>
+            </div>  
+
+            <div class="divHeader">
+                <nav class="navHeader">
+                    <div>
+                        <img class="logoHeader" src="img/logo/logo-car.jpg">
+                    </div>
+                    <ul class="ulParent1">
+                        <li class="liParent1"><a href="trangchu.html">TRANG CHỦ</a></li>
+                        <li class="liParent1">
+                            <a href="gioithieu.html">GIỚI THIỆU</a>
+                        </li>
+                        <li class="liParent1">
+                            <a href="dongxe.html">DÒNG XE</a>
+                            <ul class="ulParent2">
+                                <li><a href="dongxe.html#dx-urus">URUS</a>
+                                <li><a href="dongxe.html#dx-huracan">HURACAN</a>
+                                <li><a href="dongxe.html#dx-aventador">AVENTADOR</a>
+                                <li><a href="dongxe.html#dx-other">LIMIT VERSION</a>
+                            </ul>
+                        </li>
+                        <li class="liParent1">
+                            <a href="chamsocvabaohanh.html">DỊCH VỤ</a>
+                            <ul class="ulParent2">
+                                <li><a href="phutung.html">PHỤ KIỆN</a>
+                                <li><a href="chamsocvabaohanh.html">CHĂM SÓC - BẢO HÀNH</a>
+                            </ul>
+                        </li>
+                        <li class="liParent1">
+                            <a href="tintuc.html">TIN TỨC</a>
+                        </li>
+                        <li class="liParent1">
+                            <a href="lienhe.html">LIÊN HỆ</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+    <!-- Main trang BẢO DƯỠNG VÀ BẢO HÀNH -->
+    <main class="row-csvbh-main">
+        <div class="csvbh-main-iconplace">
+            <a href="#csvbh-section1"><img src="img/chamsocvabaohanh/icon-top.png"></i></a>
+            <a href="#csvbh-section2"><img src="img/chamsocvabaohanh/icon-baoduong.png"></a>
+            <a href="#csvbh-section5"><img src="img/chamsocvabaohanh/icon-baohanh.png"></i></a>
+        </div>
+        <div class="csvbh-container">
+            <section id="csvbh-section1">
+                <div class="csvbh-sec1-container">
+                    <div class="csvbh-sec1-container-row1">
+                        <div class="csvbh-sec1-container-row1-column1">
+                            <img src="img/chamsocvabaohanh/logolamborghini.png" data-aos="fade-up">
+                        </div>
+                        <div class="csvbh-sec1-container-row1-column2">
+                            <div data-aos="fade-up" class="csvbh-sec1-container-column2-tieude">
+                                <h2>Dịch vụ <span>Bảo hành</span></h2>
+                                <h2>Bảo dưỡng toàn diện</h2>
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="csvbh-sec1-container-row2">
+                        <img id="csvbh-sec1-xedo" src="img/chamsocvabaohanh/xedopng.png" data-aos="fade-up-right">
+                        <img id="csvbh-sec1-xetrang" src="img/chamsocvabaohanh/xetrangpng.png" data-aos="fade-up-left">
+                    </div>
+                </div>
+            </section>
+            <section id="csvbh-section2">
+                <div class="csvbh-sec2-container">
+                    <div class="csvbh-sec2-column1" data-aos="fade-right">
+                        <h2>Gói bảo dưỡng</h2>
+                        <h3>Giữ vững giá trị xe Lamborghini</h3>
+                        <img src="img/chamsocvabaohanh/baoduongsec2.jpg">
+                    </div>
+                    <div class="csvbh-sec2-column2" data-aos="fade-left">
+                        <h3>Dịch vụ của tôi. Sự an tâm cho bạn.</h3>
+                        <ul>
+                            <li><i class="fas fa-check-double"></i>Đơn giản hóa dịch vụ bảo dưỡng với phạm vi dịch vụ đã định trước.</li>
+                            <li><i class="fas fa-check-double"></i>Bạn sẽ không cần lo lắng về việc tăng giá với chi phí bảo trì xe suốt 2 năm.</li>
+                            <li><i class="fas fa-check-double"></i>Tăng giá trị bán lại xe khi quyết định sang nhượng lại chiếc xe của mình nhờ:
+                            <li><i class="fas fa-check"></i>Lịch sử dịch vụ bảo dưỡng chính hãng được đảm bảo cho chủ sở hữu tiếp theo.</li>
+                            <li><i class="fas fa-check"></i>Quy trình dịch vụ được thực hiện bởi các chuyên gia kỹ thuật có chứng chỉ.</li>
+                            <li><i class="fas fa-check"></i>Chỉ sử dụng phụ tùng chính hãng của Lamborghini.</li>
+                        </ul>
+                        <button>
+                            <a href="lienhe.html">Liên hệ ngay</a>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <section id="csvbh-section3">
+                <div class="csvbh-sec3-container">
+                    <div class="csvbh-sec3-column1" data-aos="fade-right">
+                        <h3>Chăm sóc và sửa chữa chiếc xe toàn diện</h3>
+                        <ul>
+                            <li><i class="fas fa-check-double"></i>Kiểm tra xe và đưa ra phương án xử lý an toàn nhất</li>
+                            <li><i class="fas fa-check-double"></i>Sử dụng phần mềm đo đạc thông tin chỉ số xe chuyên biệt.</li>
+                            <li><i class="fas fa-check-double"></i>Các dụng cụ chuyên dụng tương thích cho từng bộ phận của xe.</li>
+                            <li><i class="fas fa-check-double"></i>Tối ưu chiếc xe dựa theo quãng đường, thời gian và điều kiện sử dụng.</li>
+                        </ul>
+                        <button>
+                            <a href="lienhe.html">Liên hệ ngay</a>
+                        </button>
+                    </div>
+                    <div class="csvbh-sec3-column2" data-aos="fade-left">
+                        <h2>Dịch vụ bảo dưỡng</h2>
+                        <h3>Đem đến sự hài lòng tuyệt đối cho khách hàng</h3>
+                        <img src="img/chamsocvabaohanh/baoduong.jpg">
+                    </div>
+                </div>
+            </section>
+            <section id="csvbh-section4">
+                <div class="csvbh-sec4-container">
+                    <div class="csvbh-sec4-column1" data-aos="fade-right">
+                        <h3>Bảo dưỡng định kỳ cho chiếc xe của bạn</h3>
+                        <ul>
+                            <li><i class="fas fa-check-double"></i>Duy trì và kéo dài tuổi thọ các chi tiết trong xe.</li>
+                            <li><i class="fas fa-check-double"></i>Công việc được thực hiện theo 1 chu kỳ nhất định.</li>
+                            <li><i class="fas fa-check-double"></i>Hạn chế phát sinh các hư hỏng từ đó tiết kiệm được chi phí.</li>
+                            <li><i class="fas fa-check-double"></i>Lịch sử bảo dưỡng định kỳ được mô tả chi tiết trong sách hướng dẫn.</li>
+                        </ul>
+                        <button>
+                            <a href="lienhe.html">Liên hệ ngay</a>
+                        </button>
+                    </div>
+                    <div class="csvbh-sec4-column2" data-aos="fade-left">
+                        <h2>Dịch vụ bảo dưỡng</h2>
+                        <h3>Đem đến sự hài lòng tuyệt đối cho khách hàng</h3>
+                        <img src="img/chamsocvabaohanh/baoduongdinhky.jpg">
+                    </div>
+                </div>
+            </section>
+            <section id="csvbh-section5">
+                <div class="csvbh-sec5-container">
+                    <div class="csvbh-sec5-column1" data-aos="fade-right">
+                        <h2>Chính sách bảo hành</h2>
+                        <h3>Đảm bảo sự chu toàn cho chiếc xe của bạn</h3>
+                        <img src="img/chamsocvabaohanh/baohanhxe.jpg">
+                    </div>
+                    <div class="csvbh-sec5-column2" data-aos="fade-left">
+                        <h3>Thời gian bảo hành</h3>
+                        <ul>
+                            <li><i class="fas fa-check-double"></i>Xe Lamborghini có thời gian bảo hành 3 năm hoặc 100.000KM.</li>
+                            <li><i class="fas fa-check-double"></i>Tùy điều kiện nào đến trước để có thể đưa ra phương án bảo hành tốt nhất.</li>
+                            <li><i class="fas fa-check-double"></i>Những hư hỏng do khuyết tất của vật liệu sẽ được bảo hành.</li>
+                            <li><i class="fas fa-check-double"></i>Quá trình lắp ráp, sử dụng sản phẩm đúng cách sẽ được bảo hành.</li>
+                        </ul>
+                        <button>
+                            <a href="lienhe.html">Liên hệ ngay</a>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <section id="csvbh-section6">
+                <div class="csvbh-sec6-container">
+                    <div class="csvbh-sec6-column1" data-aos="fade-right">
+                        <h3>Bảo hành phụ tùng</h3>
+                        <ul>
+                            <li><i class="fas fa-check-double"></i>Phụ tùng thay thế trong quá trình sửa chữa do khách hàng chịu chi phí.</li>
+                            <li><i class="fas fa-check-double"></i>Sử dụng phần mềm đo đạc thông tin chỉ số xe chuyên biệt.</li>
+                            <li><i class="fas fa-check-double"></i>Các dụng cụ chuyên dụng tương thích cho từng chi tiết của xe.</li>
+                            <li><i class="fas fa-check-double"></i>Tối ưu quãng đường di chuyển, thời gian hoạt động và điều kiện sử dụng.</li>
+                        </ul>
+                        <button>
+                            <a href="lienhe.html">Liên hệ ngay</a>
+                        </button>
+                    </div>
+                    <div class="csvbh-sec6-column2" data-aos="fade-left">
+                        <h2>Chính sách bảo hành</h2>
+                        <h3>Đảm bảo sự chu toàn cho chiếc xe của bạn</h3>
+                        <img src="img/chamsocvabaohanh/baohanhxe1.jpg">
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Scripts ANIMATION cuộn mượt -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        delay: 700,
+        duration: 1000,
+      });
+    </script>
+
+    <footer>
+        <div class="divFooter1">
+            <div>
+                <h3 class="h3Footer1 footer-straight-line">GIỚI THIỆU</h3>
+                <p>SUPER CAR là công ty mua bán dòng xe Lamborgini hàng đầu Việt Nam. Với hơn 40 năm kinh nghiệm dày dặn, chúng tôi đảm bảo sẽ mang đến cho bạn những mẫu xe tốt và thời thượng nhất hiện nay. Trên Website SUPER CAR, chúng tôi liên tục cập nhật những mẫu xe Lamborgini mới nhất cùng với các bài đánh giá, bài báo cũng như các dịch vụ liên quan đến dòng xe Lamborgini.</p>
+            </div>
+            <div class="superCarFooter-link1">
+                <h3 class="footer-straight-line">SUPER CAR</h3>
+                <ul class="link1 footerLink">
+                    <li><a href="trangchu.html">Trang Chủ</a></li>
+                    <li><a href="gioithieu.html">Giới Thiệu</a></li>
+                    <li><a href="dongxe.html">Dòng Xe</a></li>
+                    <li><a href="dichvu.html">Dịch Vụ</a></li>
+                    <li><a href="tintuc.html">Tin Tức</a></li>
+                    <li><a href="lienhe.html">Liên Hệ</a></li>
+                </ul>
+            </div>
+            <div class="superCarFooter-link2">
+                <h3 class="footer-straight-line">LIÊN HỆ</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Địa chỉ: Khoa CNTT&TT, đại học Cần Thơ, phường An Khánh, quận Ninh Kiều, Cần Thơ, Việt Nam</p>
+                <p><i class="fas fa-globe-americas"></i> Website: www.supercar.com</p>
+                <p><i class="fas fa-envelope"></i> Email: LTWGroup2@gamil.com</p>
+                <p><i class="fas fa-phone-alt"></i> Hotline: 099 999 999</p>
+            </div>
+            <div class="superCarFooter-link3">
+                <h3 class="footer-straight-line">THEO DÕI</h3>
+                <i class="fab fa-facebook-square fa-2x"></i>
+                <i class="fab fa-twitter-square fa-2x"></i>
+                <i class="fab fa-instagram-square fa-2x"></i>        
+                <i class="fab fa-youtube-square fa-2x"></i>
+            </div>
+        </div>
+        <div class="footer-line"></div>  
+        <div class="divFooter2">
+            <p>Website chúng tôi không bán hàng trực tiếp, nếu muốn mua sản phẩm, vui lòng liên hệ với chúng tôi.</p>
+            <p>&copy Bản quyền thuộc về <b>SUPPERCAR</b></p>
+        </div>
+    </footer> 
+</body>
+</html>  

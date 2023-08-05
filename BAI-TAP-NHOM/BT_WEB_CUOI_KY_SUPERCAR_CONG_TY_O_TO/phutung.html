@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="img/logo/logo-shortcut-icon.png">
+        <title>SUPERCAR</title>  
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" type="text/css" href="index.css">
+
+        <!-- Link CSS ANIMATION cuộn mượt -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+
+        <script src="index.js" type="text/javascript"></script>
+    </head>
+
+    <body>
+        <header>
+            <div class="headerUser">
+                <ul class="ulHeaderUser">
+                    <li>
+                        <a class="aFontColor aClickUser" onclick="clickToSignin()"><i class="fas fa-user"></i></a>
+                        <div id="divSignin">
+                            <h4 class="UserHere">Đăng nhập tài khoản SUPER CAR</h4>
+                            <p class="pRegisterHere UserHere">Đăng ký tại đây.</p>
+                            <div class="divSigninUser"><a class="aSigninUser" href="dangnhap.html">ĐĂNG NHẬP</a></div>
+                            <div class="divSigninUser"><a class="aRegisterUser" href="dangky.html">ĐĂNG KÝ</a></div>
+                        </div>
+                    </li>
+                    <li>
+                        <input class="searchHeader" type="text" name="search">
+                        <a class="aFontColor aClickUser" href="timkiem.html"><i class="fas fa-search"></i></a>
+                    </li>  
+                </ul>
+            </div>  
+
+            <div class="divHeader">
+                <nav class="navHeader">
+                    <div>
+                        <img class="logoHeader" src="img/logo/logo-car.jpg">
+                    </div>
+                    <ul class="ulParent1">
+                        <li class="liParent1"><a href="trangchu.html">TRANG CHỦ</a></li>
+                        <li class="liParent1">
+                            <a href="gioithieu.html">GIỚI THIỆU</a>
+                        </li>
+                        <li class="liParent1">
+                            <a href="dongxe.html">DÒNG XE</a>
+                            <ul class="ulParent2">
+                                <li><a href="dongxe.html#dx-urus">URUS</a>
+                                <li><a href="dongxe.html#dx-huracan">HURACAN</a>
+                                <li><a href="dongxe.html#dx-aventador">AVENTADOR</a>
+                                <li><a href="dongxe.html#dx-other">LIMIT VERSION</a>
+                            </ul>
+                        </li>
+                        <li class="liParent1">
+                            <a href="chamsocvabaohanh.html">DỊCH VỤ</a>
+                            <ul class="ulParent2">
+                                <li><a href="phutung.html">PHỤ KIỆN</a>
+                                <li><a href="chamsocvabaohanh.html">CHĂM SÓC - BẢO HÀNH</a>
+                            </ul>
+                        </li>
+                        <li class="liParent1">
+                            <a href="tintuc.html">TIN TỨC</a>
+                        </li>
+                        <li class="liParent1">
+                            <a href="lienhe.html">LIÊN HỆ</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+    <!-- Main trang PHỤ TÙNG -->
+    <main class="row-pt-main">
+        <div class="pt-main-iconplace">
+            <a href="#pt-section-intro"><img src="img/phutung/icon-top.png"></i></a>
+            <a href="#pt-section1"><img src="img/phutung/icon-mamxe.png"></a>
+            <a href="#pt-section4"><img src="img/phutung/icon-banhxe.png"></i></a>
+            <a href="#pt-section2"><img src="img/phutung/icon-ghexe.png"></i></a>
+            <a href="#pt-section3"><img src="img/phutung/icon-denxe.png"></i></a>
+        </div>
+        <div class="pt-container">
+            <section id="pt-section-intro">
+                <div class="pt-secintro-container">
+                    <div class="pt-sec-intro-row1">
+                        <img data-aos="fade-in" id="pt-logo" src="img/phutung/logolamborghini.png">
+                        <h2 data-aos="fade-in">Phụ tùng <span>Chính hãng</span></h2>
+                        <h3 data-aos="fade-in">Đồng hành cùng bạn trên những chặn đường dài phía trước</h3>
+                    </div>
+                    <div class="pt-sec-intro-row2">
+                        <img data-aos="fade-right" id="pt-xedo" src="img/phutung/xedopng.png">
+                        <img data-aos="fade-up" id="pt-xecam" src="img/phutung/xecampng.png">
+                        <img data-aos="fade-left" id="pt-xetrang" src="img/phutung/xetrang1png.png">
+                    </div>
+                </div>
+            </section>
+            <section id="pt-section1">
+                <div class="pt-sec1-mamxe">
+                    <div class="pt-sec1-mamxe-cot1" data-aos="fade-right">
+                        <h2>Mâm xe <span>Chính hãng</span></h2>
+                        <h3>Đem đến sự hài lòng cho khách hàng</h3>
+                        <p>thông qua các loại mâm xe chắc chắn.</p>
+                    </div>
+                    <div class="pt-sec1-mamxe-cot2" data-aos="fade-left">
+                        <div class="pt-gt_cot1">
+                            <div class="pt-card-mamxe">
+                                <div class="pt-icon-mamxe">
+                                    <img src="img/phutung/mamxe/mam1.png">
+                                </div>
+                                <div class="pt-text-mamxe">
+                                    <p>Mâm xe Lamborghini bạc đỏ. Giá: 22.000.000 vnd.</p>
+                                    <button>
+                                        <a href="lienhe.html">Liên hệ</a>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="pt-card-mamxe">
+                                <div class="pt-icon-mamxe">
+                                    <img src="img/phutung/mamxe/mam3.png">
+                                </div>
+                                <div class="pt-text-mamxe">
+                                    <p>Mâm xe Lamborghini sơn đen. Giá: 28.000.000 vnd.</p>
+                                    <button>
+                                        <a href="lienhe.html">Liên hệ</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pt-gt_cot2">
+                            <div class="pt-card-mamxe">
+                                <div class="pt-icon-mamxe">
+                                    <img src="img/phutung/mamxe/mam2.png">
+                                </div>
+                                <div class="pt-text-mamxe">
+                                    <p>Mâm xe Lamborghini bạc. Giá: 20.000.000 vnd.</p>
+                                    <button>
+                                        <a href="lienhe.html">Liên hệ</a>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="pt-card-mamxe">
+                                <div class="pt-icon-mamxe">
+                                    <img src="img/phutung/mamxe/mam4.png">
+                                </div>
+                                <div class="pt-text-mamxe">
+                                    <p>Mâm xe Lamborghini đen đỏ. Giá: 31.000.000 vnd.</p>
+                                    <button>
+                                        <a href="lienhe.html">Liên hệ</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="pt-section4">
+                <div class="pt-sec4-container">
+                    <div class="pt-sec4-container-row1">
+                        <div class="pt-sec4-tieude" data-aos="fade-in">
+                            <h2>Bánh xe <span>Chính hãng</span></h2>
+                            <h3>Sự bền bỉ thể hiện trên những chặn đường</h3>
+                        </div>
+                    </div>
+                    <div class="pt-sec4-container-row2" data-aos="zoom-in">
+                        <div class="pt-sec4-column1-row1-cardbanhxe">
+                            <img src="img/phutung/banhxe/banhxe1.jpg">
+                            <p>Bánh xe Lamborghini đen vàng. Giá: 66.000.000 vnd.</p>
+                            <button>
+                                <a href="lienhe.html">Liên hệ</a>
+                            </button>
+                        </div>
+                        <div class="pt-sec4-column1-row1-cardbanhxe">
+                            <img src="img/phutung/banhxe/banhxe3.jpg">
+                            <p>Bánh xe Lamborghini đen bạc. Giá: 61.000.000 vnd.</p>
+                            <button>
+                                <a href="lienhe.html">Liên hệ</a>
+                            </button>
+                        </div>
+                        <div class="pt-sec4-column1-row1-cardbanhxe">
+                            <img src="img/phutung/banhxe/banhxe4.jpg">
+                            <p>Bánh xe Lamborghini đỏ đen. Giá: 80.000.000 vnd.</p>
+                            <button>
+                                <a href="lienhe.html">Liên hệ</a>
+                            </button>
+                        </div>
+                        <div class="pt-sec4-column1-row1-cardbanhxe">
+                            <img src="img/phutung/banhxe/banhxe5.jpg">
+                            <p>Bánh xe Lamborghini đen đỏ. Giá: 75.000.000 vnd.</p>
+                            <button>
+                                <a href="lienhe.html">Liên hệ</a>
+                            </button>
+                        </div>
+                        <div class="pt-sec4-column1-row1-cardbanhxe">
+                            <img src="img/phutung/banhxe/banhxe6.jpg">
+                            <p>Bánh xe Lamborghini xanh đen. Giá: 79.000.000 vnd.</p>
+                            <button>
+                                <a href="lienhe.html">Liên hệ</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="pt-section2">
+                <div class="pt-sec2-ghexe">
+                    <div class="pt-sec2-column" data-aos="zoom-in-right">
+                        <div class="pt-sec2-cardghexe">
+                            <div class="pt-sec2-chitiet-cardghexe">
+                                <img src="img/phutung/ghexe/ghedo.jpg">
+                                <p>Ghế xe Lamborghini đỏ trắng. Giá: 103.000.000 vnd</p>
+                                <button>
+                                    <a href="lienhe.html">Liên hệ</a>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="pt-sec2-cardghexe">
+                            <div class="pt-sec2-chitiet-cardghexe">
+                                <img src="img/phutung/ghexe/ghevang1.jpg">
+                                <p>Ghế xe Lamborghini vàng đen. Giá: 119.000.000 vnd</p>
+                                <button>
+                                    <a href="lienhe.html">Liên hệ</a>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="pt-sec2-cardghexe">
+                            <div class="pt-sec2-chitiet-cardghexe">
+                                <img src="img/phutung/ghexe/ghexanhduong.jpg">
+                                <p>Ghế xe Lamborghini xanh đen. Giá: 110.000.000 vnd</p>
+                                <button>
+                                    <a href="lienhe.html">Liên hệ</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-sec2-column" data-aos="zoom-in-left">
+                        <div class="pt-sec2-tieude">
+                            <h2>Ghế xe <span>Chính hãng</span></h2>
+                            <p>Sự êm ái sẽ làm khách hàng hài lòng khi trải nghiệm</p>
+                        </div>
+                        <div class="pt-sec2-cardghexe-cot2">
+                            <div class="pt-sec2-chitiet-cardghexe">
+                                <img src="img/phutung/ghexe/ghexanhla.jpg">
+                                <p>Ghế xe Lamborghini xanh đen. Giá: 132.000.000 vnd</p>
+                                <button>
+                                    <a href="lienhe.html">Liên hệ</a>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="pt-sec2-cardghexe-cot2">
+                            <div class="pt-sec2-chitiet-cardghexe">
+                                <img src="img/phutung/ghexe/gheden.jpg">
+                                <p>Ghế xe Lamborghini xanh đen. Giá: 10.000.000 vnd</p>
+                                <button>
+                                    <a href="lienhe.html">Liên hệ</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="pt-section3">
+                <div class="pt-sec3-flex-container">
+                    <div class="pt-sec3-row1">
+                        <div class="pt-sec3-row1-tieude" data-aos="fade-in">
+                            <h2>Đèn xe <span>Chính hãng</span></h2>
+                            <p>Đèn xe công nghệ siêu sáng đáp ứng nhu cầu trong tương lai.</p>
+                        </div>
+                    </div>
+                    <div class="pt-sec3-row2" data-aos="fade-in">
+                        <div class="pt-sec3-row2-carddenxe">
+                            <div class="pt-sec3-row2-carddenxe-circle"></div>
+                            <img src="img/phutung/denxe/den3.jpg">
+                            <p>Đèn xe Lamborghini Loại H1. Giá: 20.000.000 vnd</p>
+                            <button>
+                                <a href="lienhe.html">LIÊN HỆ</a>
+                            </button>
+                        </div>
+                        <div class="pt-sec3-row2-carddenxe">
+                            <div class="pt-sec3-row2-carddenxe-circle"></div>
+                            <img src="img/phutung/denxe/den5.jpg">
+                            <p>Đèn xe Lamborghini Loại 9R. Giá: 18.000.000 vnd</p>
+                            <button>
+                                <a href="lienhe.html">LIÊN HỆ</a>
+                            </button>
+                        </div>
+                        <div class="pt-sec3-row2-carddenxe">
+                            <div class="pt-sec3-row2-carddenxe-circle"></div>
+                            <img src="img/phutung/denxe/den7.jpg">
+                            <p>Đèn xe Lamborghini Loại 3A. Giá: 21.000.000 vnd</p>
+                            <button>
+                                <a href="lienhe.html">LIÊN HỆ</a>
+                            </button>
+                        </div>
+                        <div class="pt-sec3-row2-carddenxe">
+                            <div class="pt-sec3-row2-carddenxe-circle"></div>
+                            <img src="img/phutung/denxe/den1.jpg">
+                            <p>Đèn xe Lamborghini Loại G6. Giá: 25.000.000 vnd</p>
+                            <button>
+                                <a href="lienhe.html">LIÊN HỆ</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Scripts ANIMATION cuộn mượt -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        delay: 700,
+        duration: 1000,
+      });
+    </script>
+  
+    <footer>
+        <div class="divFooter1">
+            <div>
+                <h3 class="h3Footer1 footer-straight-line">GIỚI THIỆU</h3>
+                <p>SUPER CAR là công ty mua bán dòng xe Lamborgini hàng đầu Việt Nam. Với hơn 40 năm kinh nghiệm dày dặn, chúng tôi đảm bảo sẽ mang đến cho bạn những mẫu xe tốt và thời thượng nhất hiện nay. Trên Website SUPER CAR, chúng tôi liên tục cập nhật những mẫu xe Lamborgini mới nhất cùng với các bài đánh giá, bài báo cũng như các dịch vụ liên quan đến dòng xe Lamborgini.</p>
+            </div>
+            <div class="superCarFooter-link1">
+                <h3 class="footer-straight-line">SUPER CAR</h3>
+                <ul class="link1 footerLink">
+                    <li><a href="trangchu.html">Trang Chủ</a></li>
+                    <li><a href="gioithieu.html">Giới Thiệu</a></li>
+                    <li><a href="dongxe.html">Dòng Xe</a></li>
+                    <li><a href="dichvu.html">Dịch Vụ</a></li>
+                    <li><a href="tintuc.html">Tin Tức</a></li>
+                    <li><a href="lienhe.html">Liên Hệ</a></li>
+                </ul>
+            </div>
+            <div class="superCarFooter-link2">
+                <h3 class="footer-straight-line">LIÊN HỆ</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Địa chỉ: Khoa CNTT&TT, đại học Cần Thơ, phường An Khánh, quận Ninh Kiều, Cần Thơ, Việt Nam</p>
+                <p><i class="fas fa-globe-americas"></i> Website: www.supercar.com</p>
+                <p><i class="fas fa-envelope"></i> Email: LTWGroup2@gamil.com</p>
+                <p><i class="fas fa-phone-alt"></i> Hotline: 099 999 999</p>
+            </div>
+            <div class="superCarFooter-link3">
+                <h3 class="footer-straight-line">THEO DÕI</h3>
+                <i class="fab fa-facebook-square fa-2x"></i>
+                <i class="fab fa-twitter-square fa-2x"></i>
+                <i class="fab fa-instagram-square fa-2x"></i>        
+                <i class="fab fa-youtube-square fa-2x"></i>
+            </div>
+        </div>
+        <div class="footer-line"></div>  
+        <div class="divFooter2">
+            <p>Website chúng tôi không bán hàng trực tiếp, nếu muốn mua sản phẩm, vui lòng liên hệ với chúng tôi.</p>
+            <p>&copy Bản quyền thuộc về <b>SUPPERCAR</b></p>
+        </div>
+    </footer> 
+</body>
+</html>  

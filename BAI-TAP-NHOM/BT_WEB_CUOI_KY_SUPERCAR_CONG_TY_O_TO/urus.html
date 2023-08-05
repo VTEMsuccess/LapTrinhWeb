@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="img/logo/logo-shortcut-icon.png">
+        <title>Dòng Xe URUS</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <script src="index.js" type="text/javascript"></script>
+      </head>
+    <body>
+        <header>
+          <div class="headerUser">
+            <ul class="ulHeaderUser">
+              <li>
+                <a class="aFontColor aClickUser" onclick="clickToSignin()"><i class="fas fa-user"></i></a>
+                <div id="divSignin">
+                  <h4 class="UserHere">Đăng nhập tài khoản SUPER CAR</h4>
+                  <p class="pRegisterHere UserHere">Đăng ký tại đây.</p>
+                  <div class="divSigninUser"><a class="aSigninUser" href="dangnhap.html">ĐĂNG NHẬP</a></div>
+                  <div class="divSigninUser"><a class="aRegisterUser" href="dangky.html">ĐĂNG KÝ</a></div>
+                </div>
+              </li>
+              <li>
+                <input class="searchHeader" type="text" name="search">
+                <a class="aFontColor aClickUser" href="timkiem.html"><i class="fas fa-search"></i></a>
+              </li>  
+            </ul>
+          </div>  
+
+          <div class="divHeader">
+            <nav class="navHeader">
+              <div>
+                <img class="logoHeader" src="img/logo/logo-car.jpg">
+              </div>
+              <ul class="ulParent1">
+                <li class="liParent1"><a href="trangchu.html">TRANG CHỦ</a></li>
+                <li class="liParent1">
+                  <a href="gioithieu.html">GIỚI THIỆU</a>
+                </li>
+                <li class="liParent1">
+                  <a href="dongxe.html">DÒNG XE</a>
+                  <ul class="ulParent2">
+                    <li><a href="dongxe.html#dx-urus">URUS</a>
+                    <li><a href="dongxe.html#dx-huracan">HURACAN</a>
+                    <li><a href="dongxe.html#dx-aventador">AVENTADOR</a>
+                    <li><a href="dongxe.html#dx-other">LIMIT VERSION</a>
+                  </ul>
+                </li>
+                <li class="liParent1">
+                  <a href="chamsocvabaohanh.html">DỊCH VỤ</a>
+                  <ul class="ulParent2">
+                    <li><a href="phutung.html">PHỤ KIỆN</a>
+                    <li><a href="chamsocvabaohanh.html">CHĂM SÓC - BẢO HÀNH</a>
+                  </ul>
+                </li>
+                <li class="liParent1">
+                  <a href="tintuc.html">TIN TỨC</a>
+                </li>
+                <li class="liParent1">
+                  <a href="lienhe.html">LIÊN HỆ</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+        <main class="dx-main">
+          <div class="div-down"> 
+            <!-- div này không được đụng đến -->
+          </div>
+            <div id="dx-hideUrus">
+                <div class="dx-namePrice">
+                    <div class="dx-namePrice1">
+                      <p class="text">XE LAMBORGHINI URUS</p>
+                      <img id="dxUrus-img" src="./img/dongxe/urus_vang.png">
+                      <div id="dxUrusLi">
+                          <img id="dxUrusLi1" onclick="displayProductImg('dxUrusLi1')" src="./img/dongxe/tron_vang.png" class="./img/dongxe/urus_vang.png">
+                          <img id="dxUrusLi2" onclick="displayProductImg('dxUrusLi2')" src="./img/dongxe/tron_xam.png" class="./img/dongxe/urus_bac.png">
+                          <img id="dxUrusLi3" onclick="displayProductImg('dxUrusLi3')" src="./img/dongxe/tron_den.png" class="./img/dongxe/urus_den.png">
+                          <img id="dxUrusLi5" onclick="displayProductImg('dxUrusLi5')" src="./img/dongxe/tron_xanhduong.png" class="./img/dongxe/urus_xanh.png">
+                      </div>
+                      <p>Giá xe Lamborghini Urus: <span class="price">&#36;255.000</span></p>
+                    </div>
+                    <div class="dx-namePrice2">
+                      <div>
+                        <i onclick="Previous()" class="fas fa-chevron-circle-left pre"></i>
+                        <img id="dxUrusImg0" src="./img/dongxe/urus-dentruoc.jpg">
+                        <i onclick="Next()" class="fas fa-chevron-circle-right next"></i>
+                      </div>
+                        
+                        
+                      <div id="dxUrusImg">
+                        <img id="dxUrusImg1" class="dxImg" onclick="displayProduct('1')" src="./img/dongxe/urus-dentruoc.jpg">
+                        <img id="dxUrusImg2" class="dxImg" onclick="displayProduct('2')" src="./img/dongxe/urus-dongco.jpg">
+                        <img id="dxUrusImg3" class="dxImg" onclick="displayProduct('3')" src="./img/dongxe/urus_banhxe.jpg">
+                        <img id="dxUrusImg4" class="dxImg" onclick="displayProduct('4')" src="./img/dongxe/urus_dauxe.jpg">
+                        <img id="dxUrusImg5" class="dxImg" onclick="displayProduct('5')" src="./img/dongxe/urus_duoixe.jpg">
+                        <img id="dxUrusImg6" class="dxImg" onclick="displayProduct('6')" src="./img/dongxe/urus_khoangchua.jpg">
+                        <img id="dxUrusImg7" class="dxImg" onclick="displayProduct('7')" src="./img/dongxe/urus_logo.jpg">
+                        <img id="dxUrusImg8" class="dxImg" onclick="displayProduct('8')" src="./img/dongxe/urus_thanxe.jpg">
+                      </div>
+                      <a href="lienhe.html" class="dx-lh">Liên Hệ Ngay</a>
+                    </div>
+                </div>
+                
+                <div class="dxNgoaiThat">
+                
+                    <p class="dx-tieuDeNT">
+                        Thiết Kế Ngoại Thất <br> <br> <span class="dx-tieuDeNTSpan">Thể Thao</span> &#38; <span class="dx-tieuDeNTSpan">Lôi Cuốn</span> 
+                        <br> <br> <br>
+                        <a href="lienhe.html" class="dx-lh">Liên Hệ Ngay</a>
+                    </p>
+                    <hr class="dx-hr">
+                    <div class="dxGTNgoaiThat">
+                        <p>Là sự kết hợp hoàn hảo của Aventador và Huracán trong 
+                            hình dáng của một chiếc SUV với kích thước tổng thể lần lượt là .</p>
+                        <p>Điểm nhấn đáng chú ý nhất là cụm đèn pha LED vô cùng sắc sảo, phảng phất phong cách Ý hiện đại và đẳng cấp.</p>
+                        <p>Phần hông xe tạo ấn tượng với đường gân dập nổi vuốt ngược từ vòm bánh trước đến tận cửa sau tạo cái nhìn khỏe khoắn và cứng cáp. 
+                            Gương chiếu hậu tích hợp đèn báo rẽ và được sơn cùng màu thân xe tương tự tay nắm cửa tạo sự liền khối đẹp mắt. Với bộ la zăng 
+                            có kích thước lớn từ 21-23 inch được trang bị, Lamborghini Urus không khác nào như “hổ mọc thêm cánh” khi nét thể thao được thể hiện một cách rõ nét nhất.</p>
+                        <p>Đuôi xe toát lên vẻ cứng cáp thực thụ của những chiếc xe gầm cao nhưng vẫn giữ được “hơi thở” của sự sang trọng nhờ cụm đèn hậu hình mũi tên tuyệt đẹp. 
+                            Ngay phía dưới là cản sau rất gân guốc cùng ống xả kép hình tròn lệch về một phía rất nam tính.</p>
+                    </div>
+                </div>
+            
+                <div class="dxnoiThat">
+                    <p class="dx-NoiThat">NỘI THẤT</p>
+                    <p class="dx-NoiThatTitle">Sang trọng rộng rãi</p>
+                    <p class="dx-NoiThatNote">Chiều dài cơ sở lên đến 3003 mm dư sức làm thỏa mãn những khách hàng đề cao sự rộng rãi. Phần nội thất của xe còn tràn ngập những chất liệu cao cấp như da Alcantara, nhôm, sợi carbon và gỗ.</p>
+                    <hr class="dx-NoiThatTitle">
+                    <p class="dx-NoiThatTitle">Vô lăng đa chức năng</p>
+                    <p class="dx-NoiThatNote">Màn hình hiển thị mở rộng cùng cụm đồng hồ giúp tổng thể khoang cabin thêm đẹp mắt với hiệu ứng thị giác mạnh mẽ.</p>
+                    <hr class="dx-NoiThatTitle">
+                    <p class="dx-NoiThatTitle">Hệ thống thông tin giải trí</p>
+                    <p class="dx-NoiThatNote">Rất nhiều tính năng thú vị có thể kể đến như: 2 màn hình cảm ứng LIS, điều khiển bằng giọng nói với các tính năng như nghe nhạc, gọi điện thoại hoặc gửi tin nhắn văn bản, kết nối USB, phát trực tuyến phương tiện Bluetooth.</p>
+                    
+                </div>
+
+                <div class="dxOperate">
+                    <div class="dxImgOperate"><img src="./img/dongxe/urus_vang.png"></div>
+                    <div class="dxContentOperate">
+                        <p class="dx-TableTitle">Thông số cơ bản</p>
+                        <div class="dx-dxDivide">
+                            <div class="dxDivide1">
+                                <p><i class="fas fa-car-side "></i> Kích thước: 5.112 x 2.016 x 1.638 </p>
+                                <p><i class="fas fa-gas-pump"></i> Mức tiêu thụ nhiên liệu: 14.1L -19.2L</p>
+                                <p><i class="fas fa-fan"></i> Bán kính vòng quay tối thiểu: 6</p>
+                                <p><i class="fas fa-wheelchair"></i> Chỗ ngồi: 5</p>
+                            </div>
+                            <div class="dxDivide2">
+                                <p><i class="fas fa-cogs"></i> Động cơ: V8 3.9L</p>
+                                <p><i class="far fa-compass"></i> Công suất cực đại: 650</p>
+                                <p><i class="fas fa-weight"></i> Dung tích xy lanh: 6.498cc</p>
+                                <p><i class="fas fa-truck-loading"></i> Dung tích khoang chứa đồ (lít): 616</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dxEND">
+                    <marquee direction="left" class="dx-End">Vui lòng liên hệ với chúng tôi để biết thêm chi tiết Hotline: 099 999 999</marquee>
+                </div>
+            </div>
+        </main>
+        <footer>
+          <div class="divFooter1">
+            <div>
+              <h3 class="h3Footer1 footer-straight-line">GIỚI THIỆU</h3>
+              <p>SUPER CAR là công ty mua bán dòng xe Lamborgini hàng đầu Việt Nam. Với hơn 40 năm kinh nghiệm dày dặn, chúng tôi đảm bảo sẽ mang đến cho bạn những mẫu xe tốt và thời thượng nhất hiện nay. Trên Website SUPER CAR, chúng tôi liên tục cập nhật những mẫu xe Lamborgini mới nhất cùng với các bài đánh giá, bài báo cũng như các dịch vụ liên quan đến dòng xe Lamborgini.</p>
+            </div>
+            <div class="superCarFooter-link1">
+              <h3 class="footer-straight-line">SUPER CAR</h3>
+              <ul class="link1 footerLink">
+                <li><a href="trangchu.html">Trang Chủ</a></li>
+                <li><a href="gioithieu.html">Giới Thiệu</a></li>
+                <li><a href="dongxe.html">Dòng Xe</a></li>
+                <li><a href="dichvu.html">Dịch Vụ</a></li>
+                <li><a href="tintuc.html">Tin Tức</a></li>
+                <li><a href="lienhe.html">Liên Hệ</a></li>
+              </ul>
+            </div>
+            <div class="superCarFooter-link2">
+              <h3 class="footer-straight-line">LIÊN HỆ</h3>
+              <p><i class="fas fa-map-marker-alt"></i> Địa chỉ: Khoa CNTT&TT, đại học Cần Thơ, phường An Khánh, quận Ninh Kiều, Cần Thơ, Việt Nam</p>
+              <p><i class="fas fa-globe-americas"></i> Website: www.supercar.com</p>
+              <p><i class="fas fa-envelope"></i> Email: LTWGroup2@gamil.com</p>
+              <p><i class="fas fa-phone-alt"></i> Hotline: 099 999 999</p>
+            </div>
+            <div class="superCarFooter-link3">
+              <h3 class="footer-straight-line">THEO DÕI</h3>
+              <i class="fab fa-facebook-square fa-2x"></i>
+              <i class="fab fa-twitter-square fa-2x"></i>
+              <i class="fab fa-instagram-square fa-2x"></i>        
+              <i class="fab fa-youtube-square fa-2x"></i>
+            </div>
+          </div>
+          <div class="footer-line">
+          </div>  
+          <div class="divFooter2">
+            <p>Website chúng tôi không bán hàng trực tiếp, nếu muốn mua sản phẩm, vui lòng liên hệ với chúng tôi.</p>
+            <p>&copy Bản quyền thuộc về <b>SUPPERCAR</b></p>
+          </div>
+        </footer> 
+    </body>
+</html>

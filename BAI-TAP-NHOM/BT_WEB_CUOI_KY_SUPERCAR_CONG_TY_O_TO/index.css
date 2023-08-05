@@ -1,0 +1,2792 @@
+html{
+	scroll-behavior: smooth;
+}
+body {
+	font-family: 'Arial', sans-serif;
+	font-weight: 300;
+	line-height: 1.700;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-image: linear-gradient( to right ,white, #B6BABA);
+}
+
+a {
+	text-decoration: none; 
+	color: white;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+header .divHeader ul, .superCarFooter-link1 ul{
+	list-style: none;
+}
+
+header .divHeader{
+	position: fixed;
+	width: 100%;
+	background-color: rgb(0, 0, 0);
+	top: 50px;
+	z-index: 90;
+}
+
+header .ulParent1{
+	display: flex;
+	margin: 20px 0;
+}
+
+header .logoHeader{
+	width: 200px;
+}
+
+header .navHeader{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 100px;
+}
+
+header .navHeader a{
+	padding: 34px 0;
+}
+
+header .navHeader a, .ulHeaderUser a{
+	font-size: 18px;
+}
+
+header .navHeader .ulParent1 .liParent1 a:hover, header .aClickUser:hover{
+	color: #B71C1C;
+	transition: all 0.4s ease;
+}
+
+header .navHeader .ulParent1 > .liParent1{
+	display: block;
+	margin: 0 15px;
+}
+
+header .ulParent1 .liParent1 .ulParent2 li{
+	display: none;
+	margin: 60px 0;
+}
+
+header .ulParent1 .liParent1 .ulParent2{
+	position: absolute;
+	top: 100px;
+	transition: top 0.5s;
+}
+
+header .ulParent1 .liParent1:hover .ulParent2 li{
+	display: block;
+	margin: 25px 0; 
+}
+
+header .ulParent1 .liParent1:hover .ulParent2{
+	background-color: black;
+	padding: 0 20px;
+	top: 70px;
+	border-top: 3px solid #B71C1C;
+}
+
+header .ulParent1 .liParent1 .ulParent2 li a{
+	font-size: 16px;
+}
+
+/* phần đăng nhập, đăng ký, tìm kiếm */
+header .headerUser{
+	position: fixed;
+	background-color: black;
+	border-bottom: 1px solid white;
+	width: 100%;
+	height: 50px;
+	z-index: 100;
+}
+
+header .ulHeaderUser{
+	display: flex;
+	justify-content: right;
+	align-items: center;
+	margin: 0 100px;
+	height: 50px;
+}
+
+header .headerUser .ulHeaderUser li{
+	margin: 0 15px;
+}
+
+header .searchHeader {
+	border: none;
+	border-radius: 10px;
+	width: 300px;
+  	height: 25px;
+}
+
+header .aClickUser {
+	cursor: pointer;
+}
+
+header #divSignin {
+	display: none;
+    position: absolute;
+    width: 120px;
+    background-color: white;
+    color: black;
+    top: 50px;
+	border-radius: 5px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	height: 300px;
+	width: 300px;
+}
+
+header .UserHere{
+	text-align: left;
+	margin-left: 20px;
+}
+
+header .aFontColor{
+	color: white;
+}
+
+header .divSigninUser{
+	height: 20px;
+	margin: 65px 0 -5px;
+	text-align: center;
+}
+
+header .aSigninUser{
+	color: white;
+	background-color: #B71C1C;
+	padding: 20px 75px;
+	border-radius: 5px;
+}
+header .aSigninUser:hover{
+	color: #B71C1C;
+	background-color: white;
+	border: 2px solid #B71C1C;
+}
+
+header .aRegisterUser{
+	color: #B71C1C;
+	background-color: white;
+	padding: 20px 88px;
+	border-radius: 5px;
+}
+
+header .aRegisterUser:hover{
+	color: white;
+	background-color: #B71C1C;
+}
+/* hết phần header -------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+/* bắt đầu phần main trang chủ */
+main .div-down { /* dòng này không được đụng đến */          
+	height: 121px;
+}
+
+/* phần carousel (slideshow) */
+.tc-carousel-slides{
+	display: none;
+}
+
+.tc-carousel-parent{
+	position: relative;
+	width: 100%;
+	height: 640px;
+}
+
+[class*="tc-photo-title-left"]{
+	position: absolute;
+	color: white;
+	left: 100px;
+}
+
+.tc-photo-title-left-car{
+	top: 218px;
+	font-size: 40px;
+	text-shadow: 2px 2px 2px #1A1A1A;
+}
+
+.tc-photo-title-left-text1, .tc-photo-title-left-text2{
+	font-size: 90px;
+	text-shadow: 4px 4px 2px #1A1A1A;
+}
+
+.tc-photo-title-left-text1{
+	top: 250px;
+}
+
+.tc-photo-title-left-text2{
+	top: 350px;
+}
+
+
+[class*="tc-photo-title-right"]{
+	position: absolute;
+	color: white;
+}
+
+.tc-photo-title-right-car{
+	top: 218px;
+	font-size: 40px;
+	text-shadow: 2px 2px 2px #1A1A1A;
+	right: 320px;
+}
+
+.tc-photo-title-right-text1, .tc-photo-title-right-text2{
+	font-size: 90px;
+	text-shadow: 4px 4px 2px #1A1A1A;
+}
+
+.tc-photo-title-right-text1{
+	top: 250px;
+	right: 320px;
+}
+
+.tc-photo-title-right-text2{
+	top: 350px;
+	right: 100px;
+}
+
+[class*="tc-photo-title-center"]{
+	position: absolute;
+	background-color: white;
+	height: 2px;
+	width: 60px;
+	top: 550px;
+	opacity: 0.7;
+	cursor: pointer;
+}
+
+[class*="tc-photo-title-center"]:hover{
+	height: 4px;
+	top: 548px;
+	opacity: 1;
+}
+
+.tc-photo-title-center1{
+	left: 100px;
+}
+
+.tc-photo-title-center2{
+	left: 170px;
+}
+
+.tc-photo-title-center3{
+	left: 240px;
+}
+
+.tc-carousel-parent div{
+	position: absolute; 
+}
+
+.tc-slides {
+  	animation-name: slides;
+  	animation-duration: 1.5s;
+  	width: 100%;
+  	height: 650px;
+}
+
+@keyframes slides {
+  	from {
+  		opacity: 0.6;
+  	} 
+  	to {
+  		opacity: 1;
+  	}
+}
+
+.tc-img-cover{
+	width: 100%;
+	height: 100%;
+	object-fit:cover;
+}
+/*hết phần carousel */
+
+
+.tc-h1{
+	color: black;
+	font-size: 40px;
+	text-align: center;
+	margin-top: 100px;
+}
+
+/* phần phụ kiện nổi bật */
+.tc-outstanding-parent{
+	position: relative;
+	display: flex;
+} 
+
+.tc-outstanding-parent, .tc-outstanding-acc-img{
+	width: 100%;
+	height: 230px;
+}
+
+.tc-outstanding-title{
+	position: relative;
+	font-size: 30px;
+	color: white;
+	top: -180px;
+	left: 5%;
+	transition: all 0.4s ease;
+}
+
+.tc-outstanding-title:hover{
+	color: #B71C1C;
+}
+
+[class*="tc-outstanding-text"]{
+	position: relative;
+	font-size: 16px;
+	color: white;
+	top: -170px;
+	left: 5%;
+}
+/* hết phần phụ kiện nổi bật */
+
+
+
+/* phần xe nổi bật */
+.tc-outstanding-car-parent{
+	position: relative;
+	display: flex;
+	width: 90%; 
+	height: 300px;
+	margin: 0 auto;
+}
+
+.tc-outstanding-car-parent section{
+	margin: 0 20px 30px;
+	padding: 30px 5px 5px;
+	background-color: white;
+	box-shadow: 4px 0 8px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+.tc-outstanding-car-img{
+	width: 100%;
+	height: 100px;
+	border-radius: 5px;
+}
+
+.tc-outstanding-car-title{
+	position: relative;
+	font-size: 16px;
+	color: black;
+	top: 16px;
+	left:13%;
+	transition: all 0.4s ease;
+}
+
+.tc-outstanding-car-title:hover{
+	color: #B71C1C;
+}
+
+.tc-outstanding-car-price{
+	position: relative;
+	font-size: 25px;
+	color: #B71C1C;
+	top: 20px;
+	left: 25%;
+}
+/* hết phần xe nổi bật */
+
+
+/* tin tức nổi bật */
+.tc-outstanding-news-parent{
+	width: 80%;
+	margin: 0 auto;
+}
+
+.tc-outstanding-news-img{
+	width: 100%;
+	display: block;
+}
+
+.tc-outstanding-news-date, .tc-outstanding-news-title, .tc-outstanding-news-text{
+	color: black;
+}
+
+.tc-outstanding-news-date{
+	font-size: 18px;
+	opacity: 0.7;
+	margin: 30px 0 10px;
+}
+
+.tc-outstanding-news-title{
+	font-size: 30px;
+}
+
+.tc-outstanding-news-text{
+	font-size: 16px;
+	text-align: justify;
+}
+
+.tc-outstanding-news-flex{
+	display: flex;
+}
+
+.tc-outstanding-news-img1{
+	width: 50%;
+	margin: 30px 20px 0 0;
+	display: block;
+}
+/* hết phần tin tức nổi bật */
+
+
+
+/* phần giảm giá */
+.tc-discount{
+	margin-top: 50px;
+	width: 100%;
+	height: 650px;
+}
+
+.tc-discount-img{
+	width: 100%;
+	height: 650px;
+	opacity: 0.5;
+}
+
+.tc-discount-title, .tc-discount-text1, .tc-discount-text2{
+	position: relative;
+	left: 10%;
+	top: -450px;
+	text-shadow: 2px 2px 2px #1A1A1A;
+}
+
+.tc-discount-title{
+	font-size: 80px;
+	color: white;
+}
+.tc-discount-text1{
+	font-size: 60px;
+	color: #B71C1C;
+}
+
+.tc-discount-text2{
+	font-size: 40px;
+	color: white;
+}
+
+.tc-discount-next-page-car{
+	position: relative;
+	left: 50%;
+	top: -720px;
+}
+
+.tc-a-discount-next-page-car{
+	color: white;
+	font-size: 20px;
+	background-color: #B71C1C;
+	padding: 15px 30px;
+	border-radius: 50px;
+}
+.tc-a-discount-next-page-car:hover{
+	color: #B71C1C;
+	background: none;
+	border: 2px solid #B71C1C;
+}
+/* hết phần giảm giá */
+/* hết phầ main trang chủ */
+
+
+
+
+/* phần trang tin tức */
+/* phần tin nổi bật */
+.tt-width-80{
+	width: 80%;
+	margin: 0 auto;
+}
+
+.tt-outstanding-news-parent, .tt-type-news-parent{
+	display: flex;
+}
+.tt-outstanding-news-3{
+	flex-basis: 70%;
+	margin: 20px 20px 0 0;
+}
+
+.tt-outstanding-news-1{
+	margin-top: 20px;
+	flex-basis: 30%;
+}
+
+.tt-outstanding-news{
+	overflow: hidden;
+}
+
+.tt-outstanding-news-img{
+	width: 100%;
+	object-fit: cover;
+	transition: all 0.4s ease;
+}
+
+.tt-outstanding-news-img:hover{
+	transform: scaleX(1.05);
+}
+
+.tt-outstanding-news-date{
+	font-size: 18px;
+	color: black;
+	opacity: 0.7;
+	margin: 20px 0 5px;
+}
+
+.tt-outstanding-news-title{
+	font-size: 25px;
+	color: black;
+}
+
+.tt-outstanding-news-date1{
+	font-size: 15px;
+	color: black;
+	opacity: 0.7;
+	margin-top: 10px;
+}
+
+.tt-outstanding-news-title1{
+	font-size: 16px;
+	color: black;
+}
+
+.tt-outstanding-news-margin{
+	margin-bottom: 20px;
+}
+/* hết phần tin nổi bật */
+
+
+/* phần thể loại tin tức */
+.tt-type-news-parent{
+	margin-top: 20px;
+}
+
+.tt-type-news-parent div{
+	width: 100%;
+	height: 200px;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.tt-type-news{
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	transition: all 0.4s ease;
+	cursor: pointer;
+}
+
+.tt-type-news-image-1{
+	background-image: url('img/tintuc/theloaitintuc/dongxemoinhat.jpg');
+}
+.tt-type-news-image-2{
+	background-image: url('img/tintuc/theloaitintuc/trainghiemxe.jpg');
+}
+.tt-type-news-image-3{
+	background-image: url('img/tintuc/theloaitintuc/sosanhxe.jpg');
+}
+.tt-type-news-image-4{
+	background-image: url('img/tintuc/theloaitintuc/gocchiase.jpg');
+}
+.tt-type-news-image-5{
+	background-image: url('img/tintuc/theloaitintuc/tuonglai.jpg');
+}
+
+.tt-type-news:hover{
+	transform: scale(1.1);
+}
+
+.tt-type-news-image{
+	margin-right: 30px;
+}
+
+[class*="tt-type-news-title"]{
+	position: relative;
+	top: 40%;
+	color: white;
+	font-size: 16px;
+}
+.tt-type-news-title-1{
+	left: 14%;
+}
+.tt-type-news-title-2{
+	left: 18%;
+}
+.tt-type-news-title-3{
+	left: 26%;
+}
+.tt-type-news-title-4{
+	left: 25%;
+}
+.tt-type-news-title-5{
+	left: 28%;
+}
+/* hết phần thể loại tin tức */
+
+
+
+/* phần tin mới nhất */
+.tt-latest-news{
+	color: black;
+	font-size: 40px;
+	margin: 20px 0;
+}
+
+.tt-latest-news-parent{
+	overflow: hidden;
+}
+
+.tt-latest-news-img{
+	width: 100%;
+	object-fit: cover;
+	transition: all 0.4s ease;
+}
+
+.tt-latest-news-img:hover{
+	transform: scaleX(1.05);
+}
+
+.tt-latest-news-date{
+	font-size: 18px;
+	color: black;
+	opacity: 0.7;
+	margin: 10px 0 5px;
+}
+
+.tt-latest-news-title{
+	font-size: 20px;
+	color: black;
+	margin-bottom: 50px;
+}
+
+.tt-latest-news-big{
+	display: flex;
+}
+
+.tt-latest-news-margin-right{
+	margin-right: 20px;
+}
+/* hết phần tin mới nhất */
+
+
+/* hết phần trang tin tức */
+
+
+
+/* bắt đầu phần dòng xe */
+
+.dx-main{
+    display: grid;
+    grid-template-areas: "dx-Hura-cell"
+                         "dx-aventador-cell"
+                         "dx-other-cell";
+	font-family: Arial, Helvetica, sans-serif;
+}
+.dx-urusHura{
+    grid-area: dx-urusHura-cell;
+    display: grid;
+    grid-template-areas: "dx-urus-cell dx-huracan-cell";
+    grid-template-columns: 33% 66%;
+    margin-bottom: 50px;
+}
+.dx-urus, .dx-huracan, .dx-aventador, .dx-other{
+    text-align: center;
+}
+.dx-urus{
+    grid-area: dx-urus-cell;
+}
+.dx-huracan{
+    grid-area: dx-huracan-cell;
+}
+.dx-aventador{
+    grid-area: dx-aventador-cell;
+    margin-bottom: 50px;
+}
+.dx-other{
+    grid-area: dx-other-cell;
+    margin-bottom: 50px;
+}
+.dx-article a{
+    text-decoration: none;
+}
+.nameCar {
+    color: black;
+}
+.carUrus:hover > .dx-urus_img, .carHuraPer:hover > .dx_hura_per_img,
+.carHuraLP:hover > .dx_hura_lp_img, .dxAvenLP700:hover > .dxAvenLP700_img,
+.dxAvenS:hover > .dxAvenS_img, .dxAvenSVJ:hover > .dxAvenSVJ_img, 
+.dxOtherCen:hover > .dxOtherCen_img, .dxOtherVeneno:hover > .dxOtherVeneno_img,
+.dxSian:hover > .dxSian_img{
+    transform: scale(1.05);
+	height: auto;
+}
+.carUrus:hover > .nameCar, .carHuraPer:hover > .nameCar,
+.dxAvenLP700:hover > .nameCar, .dxAvenS:hover > .nameCar,
+.dxAvenSVJ:hover > .nameCar, .dxOtherCen:hover > .nameCar,
+.dxOtherVeneno:hover > .nameCar, .dxSian:hover > .nameCar,
+.carHuraLP:hover > .nameCar{
+    color: #B71C1C;
+    font-weight: 600;
+}
+.dx-article img{
+    width: 90%;
+	height: auto;
+    border-radius: 10px;
+    transition: all 0.4s ease;
+}
+.dx-lamHuracan {
+    display: grid;
+    grid-template-areas: "per-cell LP-cell";
+}
+.carHuraPer {
+    grid-area: per-cell;
+}
+.carHuraLP {
+    grid-area: LP-cell;
+}
+.details {
+    border: 1px solid #B71C1C;
+    background-color: #B71C1C;
+    border-radius: 5px;
+    color: white;
+    box-sizing: border-box;
+    width: 300px;
+    height: 30px;
+    padding-top: 4px;
+    margin: auto;
+}
+.dx-lamborAven{
+    display: grid;
+    grid-template-areas: "dxAvenLP700-cell dxAvenS-cell dxAvenSVJ-cell";
+}
+.dxAvenLP700 {
+    grid-area: dxAvenLP700-cell;
+}
+.dxAvenS {
+    grid-area: dxAvenS-cell;
+}
+.dxAvenSVJ {
+    grid-area: dxAvenSVJ-cell;
+}
+.dx-lamborOther{
+    display: grid;
+    grid-template-areas: "dxOtherCen-cell dxOtherVeneno-cell dxSian-cell";
+}
+.dxOtherCen {
+    grid-area: dxOtherCen-cell;
+}
+.dxOtherVeneno {
+    grid-area: dxOtherVeneno-cell;
+}
+.dxSian {
+    grid-area: dxSian-cell;
+}
+.dx-h1 {
+    color: #B71C1C;
+    font-size: 25px;
+}
+#dx-hideUrus{
+    display: grid;
+    grid-template-areas: "dx-namePrice-cell"
+                         "dxNgoaiThat-cell"
+                         "dxnoiThat-cell"
+                         "dxOperate-cell"
+                         "dxEND-cell";
+}
+.dx-namePrice{
+    text-align: center;
+    grid-area: dx-namePrice-cell;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-areas: "dx-namePrice1-cell dx-namePrice2-cell";
+}
+.dx-namePrice1{
+    grid-area: dx-namePrice1-cell;
+}
+.dx-namePrice2{
+    grid-area: dx-namePrice2-cell;
+    position: relative;
+}
+.dxNgoaiThat{
+    grid-area: dxNgoaiThat-cell;
+    display: grid;
+    grid-template-areas: "dx-tieuDeNT-cell dx-hr-cell dxGTNgoaiThat-cell";
+    grid-template-columns: 25% 10% 65%;
+    border: 3px solid #B71C1C;
+    margin-bottom: 40px;
+    border-radius: 10px;
+}
+.dx-tieuDeNT{
+    grid-area: dx-tieuDeNT-cell;
+    text-align: center;
+    margin-top: 20%;
+}
+.dx-hr{
+    grid-area: dx-hr-cell;
+    background-color: #B71C1C;
+    width: 3px;
+}
+.dxGTNgoaiThat{
+    grid-area: dxGTNgoaiThat-cell;
+}
+.price{
+    color: #B71C1C;
+    font-weight: 900;
+}
+.dx-tieuDeNTSpan{
+    font-size: 30px;
+}
+.dx-namePrice1 > .text { 
+    top: 30px;
+    text-align: center;
+    font-size: 30px;
+}
+.dxnoiThat{
+    grid-area: dxnoiThat-cell;
+    background-image: url("./img/dongxe/urus_gioithieu.jpg");
+    width: 100%;
+    height: 700px;
+    background-size: cover;
+    color: white;
+    text-shadow: 2px 2px 2px #1A1A1A
+}
+img#dxUrus-img{
+    width: 60%;
+    height: auto;
+}
+#dxUrusLi{
+    display: grid;
+    grid-template-areas: "dxUrusLi1-cell dxUrusLi2-cell dxUrusLi3-cell dxUrusLi5-cell";
+    text-align: center;
+    margin-left: 50px;
+    transition: all 0.4s ease;
+    width: 80%;
+    height: auto;
+}
+#dxUrusLi >img{
+    width: 40%;
+    height: auto;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+#dxUrusLi1{
+    grid-area: dxUrusLi1-cell;
+}
+#dxUrusLi2{
+    grid-area: dxUrusLi2-cell;
+}
+#dxUrusLi3{
+    grid-area: dxUrusLi3-cell;   
+}
+
+#dxUrusLi5{
+    grid-area: dxUrusLi5-cell;
+}
+#dxUrusLi > img:hover{
+    transform: scale(1.2);
+    border-radius: 50%;
+}
+.dx-tieuDeNT, .dxGTNgoaiThat{
+    padding: 10px;
+}
+.dx-lh{
+    border: 3px solid #B71C1C;
+    padding: 5px;
+    font-size: 20px;
+    color: white;
+    background-color: #B71C1C;
+    text-decoration: none;
+}
+.dx-NoiThatTitle{
+    width: 30%;
+    margin-left: 5%;
+    font-size: 30px;
+}
+.dx-NoiThatNote{
+    margin-left: 5%;
+    width: 50%;
+    line-height: 25px;
+}
+.dx-NoiThat{
+    text-align: center;
+    font-size: 30px;
+}
+.dxOperate{
+    grid-area: dxOperate-cell;
+    display: grid;
+    grid-template-areas: "dxContentOperate-cell dxImgOperate-cell";
+    grid-template-columns: 50% 50%;
+}
+.dxImg{
+    animation-name: slides;
+  	animation-duration: 1.5s;
+}
+@keyframes slides {
+    from {opacity: 0.6} 
+    to {opacity: 1}
+}
+.dxImgOperate{
+    grid-area: dxImgOperate-cell;
+    
+}
+.dxImgOperate>img{
+    width: 90%;
+    height: auto;
+    margin: 100px 10% auto 0%;
+}
+.dxContentOperate{
+    grid-area: dxContentOperate-cell;
+    margin: 20px 5% auto;
+    display: grid;
+    grid-template-areas:"dx-TableTitle-cell" 
+                        "dx-dxDivide-cell";   
+}
+.dxDivide1{
+    grid-area: dxDivide1-cell;
+}
+.dxDivide2{
+    grid-area: dxDivide2-cell;
+}
+.dx-tableUrus{
+    width: 80%;
+    height: 400px;
+}
+.dx-TableTitle{
+    font-size: 30px;
+    grid-area: dx-TableTitle-cell;
+}
+.dx-dxDivide{
+    grid-area: dx-dxDivide-cell;
+    display: grid;
+    grid-template-areas: "dxDivide1-cell dxDivide2-cell";
+}
+.dxEND{
+    grid-area: dxEND-cell;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.dx-End{
+    border: 2px solid #B71C1C;
+    border-radius: 10px;
+    width: 90%;
+    height: 40px;
+    font-size: 30px;
+    color: #B71C1C;
+    font-weight: 700;
+    margin: 0px auto;
+}
+#dxUrusImg{
+    display: grid;
+    grid-template-areas: "dxUrusImg1-cell dxUrusImg2-cell dxUrusImg3-cell dxUrusImg4-cell dxUrusImg5-cell dxUrusImg6-cell dxUrusImg7-cell dxUrusImg8-cell";
+}
+#dxUrusImg1{
+    grid-area: dxUrusImg1-cell;
+}
+#dxUrusImg2{
+    grid-area: dxUrusImg2-cell;
+}
+#dxUrusImg3{
+    grid-area: dxUrusImg3-cell;
+}
+#dxUrusImg4{
+    grid-area: dxUrusImg4-cell;
+}
+#dxUrusImg5{
+    grid-area: dxUrusImg5-cell;
+}
+#dxUrusImg6{
+    grid-area: dxUrusImg6-cell;
+}
+#dxUrusImg7{
+    grid-area: dxUrusImg7-cell;
+}
+#dxUrusImg8{
+    grid-area: dxUrusImg8-cell;
+}
+#dxUrusImg>img{
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+#dxUrusImg0, #dxUrusImg>img{
+    width: 80%;
+    height: auto;
+    margin: 10px;
+}
+#dxUrusImg > img:hover{
+    transform: scale(1.1);
+}
+.pre, .next{
+    font-size: 40px;
+    position: absolute;
+    top: 35%;
+    cursor: pointer;
+} 
+.pre{
+    margin-left: 20px;
+}
+.next{
+    right: 80px;
+}
+
+.next:hover, .pre:hover{
+    transform: scale(1.1);
+}
+
+/* hết phần dòng xe */
+
+/* bắt đầu phần giới thiệu */
+
+.gt-main{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.gt-h1{
+    text-align: center;
+}
+.gt-h2, .gt-h1{
+    color: #B71C1C;
+    
+}
+.gt-p{
+    margin: auto 80px auto 80px;
+    line-height: 25px;
+    box-sizing: border-box;
+    height: 200px;
+    text-align: justify;
+}
+.gt-h1:after {
+	width: 200px;
+	height: 3px;
+	margin: 12px 0px 16px;
+	display: block;
+	position: relative;
+	left: 50%;
+	content: "";
+	transform: rotateX(-12deg) translateX(-50%);
+	background: radial-gradient(black, #fff);
+}
+
+.gtCar{
+    width: 100%;
+    height: 600px;
+    background-image: url("./img/dongxe/aven_lp700_den.jpg");
+    background-size: cover;
+}
+
+.gt1{
+    display: grid;
+    grid-template-areas: "gt-Summary-cell gt-Logo-cell";
+}
+
+.gt-Summary{
+    grid-area: gt-Summary-cell;
+    text-align: center;
+}
+
+.gt-Logo{
+    grid-area: gt-Logo-cell;
+    text-align: center;
+}
+
+.gtMyName{
+    position: relative;
+    font-size: 50px;
+    color: white;
+    top: 400px;
+    margin-left: 50px;
+}
+
+.gtMyName2{
+    color: #B71C1C;
+}
+
+.gt-ImgLogo, .gt-SummaryImg{
+    width: 650px;
+    height: auto;
+}
+.gt2{
+    display: grid;
+    grid-template-areas: "gt2_1-cell" 
+                         "gt2_2-cell";
+}
+.gt2_1{
+    grid-area: gt2_1-cell;
+    display: grid;
+    grid-template-areas: "gt2_1_1-cell gt2_1_2-cell gt2_1_3-cell";
+    grid-template-columns: 33% 34% 33%;
+}
+.gt2_2{
+    grid-area: gt2_2-cell;
+    display: grid;
+    grid-template-areas: "gt2_2_1-cell gt2_2_2-cell gt2_2_3-cell";
+}
+.gt2_1 > div, .gt2_2 > div{
+    text-align: justify;
+    margin: 10px;
+}
+.gt2_1_1{
+    grid-area: gt2_1_1-cell;
+}
+.gt2_1_2{
+    grid-area: gt2_1_2-cell;
+}
+.gt2_1_3{
+    grid-area: gt2_1_3-cell;
+}
+.gt2_2_1{
+    grid-area: gt2_2_1-cell;
+}
+.gt2_2_2{
+    grid-area: gt2_2_2-cell;
+}
+.gt2_2_3{
+    grid-area: gt2_2_3-cell;
+}
+.gt-Img{
+    width: 100%;
+    height: auto;
+    transition: all 0.4s ease;
+}
+.gt-Img:hover{
+    width: 90%;
+}
+.gt-h2-1{
+    color: #B71C1C;
+    margin-left: 10px;
+}
+.gt-p1{
+    margin-left: 10px;
+}
+/* hết phần giới thiệu */
+
+
+
+
+
+/*----------- ĐỊNH DẠNG TRANG LIÊN HỆ--------------- */
+.lh-class1 ul li{
+	list-style-type: none;
+}
+.lh-gui {
+  min-width: 200px;
+  background: #b71c1c;
+  border: 2px solid #b71c1c;
+  color: white;
+  border-radius: 0px;
+}
+
+.lh-form-control,
+.dn-form-control,
+.dk-form-control {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1;
+  color: black;
+  background-color: white;
+  background-image: none;
+  border: 1px solid white;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 1px rgba(0 0 0 / 8%);
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+
+.lh-form-group,
+.dn-form {
+  margin-bottom: 15px;
+  vertical-align: baseline;
+  line-height: 1;
+}
+
+#lh-p {
+  padding-left: 60px;
+  color: black;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.lh-iconAwesome {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #b71c1c;
+  display: inline-flex;
+  align-items: center; /* đặt biểu tượng icon ở trung tâm */
+  justify-content: center;
+  color: #b71c1c;
+  float: left; /* địa chỉ,.. định dạng ngang icon  */
+}
+
+#lh-id,
+#dk-id,
+#dn-id {
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  line-height: 1.1;
+  padding: 20px;
+}
+
+.lh-container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Tạo bố cục 2 cột bằng nhau */
+* {
+  box-sizing: border-box;
+}
+.lh-column {
+  float: left;
+  width: 50%;
+}
+/* Xóa các dấu nối sau các cột */
+.lh-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*------------- ĐỊNH DẠNG TRANG DANG NHAP---------------- */
+
+#dn-iconAwesome,
+#dk-iconAwesome {
+  text-align: center;
+  min-width: 30px;
+  padding: 10px;
+  justify-content: center;
+  color: #b71c1c;
+  border: 1px solid #b71c1c;
+}
+
+.dn-dangnhap,
+.dn-huy,
+.dk-huy,
+.dk-dangky {
+  min-width: 200px;
+  background: #b71c1c;
+  border: 2px solid #b71c1c;
+  color: white;
+  border-radius: 0;
+}
+
+/*---------------HẾT PHẦN ĐĂNG NHẬP-----------------*/
+
+/*----------ĐỊNH DẠNG  TRANG ĐĂNG KÝ -----------------*/
+
+.dk-crong {
+  width: 100%;
+  margin: 10px;
+  padding: 10px;
+  height: 100%;
+}
+/*-------HẾT ĐỊNH DẠNG TRANG ĐĂNG KÝ---------------*/
+
+
+
+
+
+/* CSS trang PHỤ TÙNG */
+.row-pt-main .pt-container {
+    width: 100%;
+    height: 100%;
+}
+.pt-main-iconplace {
+    top: 160px;
+    left: 10px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.5s ease;
+    z-index: 100;
+}
+.pt-main-iconplace a {
+    color: red;
+    font-size: 1.6em;
+    margin-bottom: 5px;
+    transition: all 0.5s ease;
+}
+.pt-main-iconplace a:hover {
+    transform: scale(1.4);
+}
+.pt-main-iconplace a img {
+    width: 35px;
+    height: auto;
+}
+
+
+
+
+/* Section Intro Tổng quan trang Phụ Tùng Lamborghini */
+#pt-section-intro {
+    width: 100%;
+    height: 100vh;
+}
+.pt-secintro-container {
+    width: 100%;
+    height: 100vh;
+}
+.pt-sec-intro-row1 {
+    width: 100%;
+    height: 40vh;
+    background-image: linear-gradient( to top , #B6BABA, white);
+}
+.pt-sec-intro-row1 h2 {
+    color: #B71C1C;
+    font-size: 29px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    display: block;
+    position: relative;
+}
+.pt-sec-intro-row1 h2 span {
+    color: black;
+    font-size: 25px;
+    font-style: italic;  
+}
+.pt-sec-intro-row1 h3 {
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+    font-style: italic;
+    margin-top: -30px;
+    position: relative;
+}
+.pt-sec-intro-row1 #pt-logo {
+    width: 75px;
+    height: auto;
+    margin-top: 140px;
+    margin-left: 47%;
+}
+.pt-sec-intro-row2 {
+    width: 100%;
+    height: 60vh;
+    background-image: linear-gradient( to top , white, #B6BABA);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pt-sec-intro-row2 #pt-xedo {
+    width: 440px;
+    height: auto;
+    margin-right: -130px;
+}
+.pt-sec-intro-row2 #pt-xecam {
+    width: 440px;
+    height: auto;
+    z-index: 2;
+}
+.pt-sec-intro-row2 #pt-xetrang {
+    width: 440px;
+    height: auto;
+    margin-left: -100px;
+    z-index: 1;
+}
+
+
+
+
+/* Section1 Mâm xe trang Phụ Tùng Lamborghini */
+.row-pt-main .pt-container #pt-section1 {
+    background: #B6BABA;
+    width: 100%;
+    height: 100vh;
+}
+.pt-sec1-mamxe {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+.pt-sec1-mamxe-cot1 {
+    width: 40%;
+    height: 100vh;
+    margin: 0 auto;
+    justify-content: center;
+    background-color: #B6BABA;
+}
+.pt-sec1-mamxe-cot1 h2 {
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: block;
+    width: 300px;
+    height: 40px;
+    background-color: #B71C1C;
+    margin-top: 170px;
+    margin-left: 90px;
+    text-align: center;
+    padding: 10px;
+    transform: skewX(-13deg);
+    transition: all 0.5s ease;
+}
+.pt-sec1-mamxe-cot1 h2:hover {
+    background-color: #961212;
+}
+.pt-sec1-mamxe-cot1 h2 span {
+    color: white;
+    font-size: 22px;
+    font-weight: 300;
+}
+.pt-sec1-mamxe-cot1 h3 {
+    color: black;
+    font-size: 21px;
+    font-weight: 300;
+    margin-left: 80px;
+    position: relative;
+}
+.pt-sec1-mamxe-cot1 h3:after {
+    content: '';
+    position: absolute;
+    top: 34px;
+    left: 0;
+    width: 80px;
+    height: 3px;
+    background-color: #B71C1C;
+    transition: all 0.4s ease;
+}
+.pt-sec1-mamxe-cot1 h3:hover:after {
+    width: 160px;
+}
+.pt-sec1-mamxe-cot1 p {
+    color: black;
+    font-size: 21px;
+    margin-left: 110px;
+    position: relative;
+}
+.pt-sec1-mamxe-cot1 p:after {
+    content: '';
+    position: absolute;
+    top: 34px;
+    left: 1px;
+    width: 80px;
+    height: 3px;
+    background-color: #B71C1C;
+    transition: all 0.4s ease;
+}
+.pt-sec1-mamxe-cot1 p:hover:after {
+    width: 160px;
+}
+.pt-sec1-mamxe-cot2 {
+    position: relative;
+    height: 100vh;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 10px 0px 10px;
+}
+.pt-gt_cot1, .pt-gt_cot2 {
+    width: 100%;
+    height: 100vh;
+    background: #B6BABA;
+    position: relative;
+}
+.pt-gt_cot1:after, .pt-gt_cot2:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 165px;
+    height: 100vh;
+    background-color: #B71C1C;
+    z-index: 0;
+}
+.pt-card-mamxe {
+    position: relative;
+    height: 200px;
+    width: 350px;
+    margin-left: 22px;
+    margin-top: 169px;
+    margin-bottom: -150px;
+    border-radius: 6px;
+    background: rgba(0.1, 0.1, 0.1, 0.1);
+    box-shadow: 0 15px 25px rgba( 0, 0, 0, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    z-index: 1;
+    transition: all 0.5s ease;
+}
+.pt-card-mamxe:hover {
+    transform: translateX(10px);
+}
+.pt-icon-mamxe img {
+    width: 130px;
+    height: auto;
+    float: right;
+}
+.pt-text-mamxe p {
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 70px;
+    padding-left: 10px;
+}
+.pt-text-mamxe button {
+    background-color: #B71C1C;
+    border-radius: 5px;
+    border: 2px solid #B71C1C;
+    width: 110px;
+    height: 40px;
+    margin-left: 15px;
+    margin-top: -6px;
+    transition: all 0.4s ease;
+}
+.pt-text-mamxe button:hover {
+    background-color: #a70e0e;
+}
+.pt-text-mamxe button a {
+    color: white;
+    font-size: 16px;
+}
+
+
+
+
+/* Section2 Ghế xe Lamborghini */
+#pt-section2 {
+    background-image: linear-gradient(to bottom , white, #B6BABA);
+    border-top: 1px solid white;
+}
+.pt-sec2-ghexe {
+    display: flex;
+    flex-direction: row;
+}
+.pt-sec2-column {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.pt-sec2-cardghexe {
+    width: 100%;
+    height: 30%;
+}
+.pt-sec2-tieude {
+    width: 100%;
+    height: 33%;
+}
+.pt-sec2-column .pt-sec2-cardghexe .pt-sec2-chitiet-cardghexe, .pt-sec2-cardghexe-cot2 .pt-sec2-chitiet-cardghexe {
+    width: 500px;
+    height: 120px;
+    background: black;
+    border-radius: 5px;
+    transition: all 0.4s ease;
+    position: relative;
+    display: flex;
+    top: 150px;
+    margin-top: -20px;
+    margin-left: 85px;
+}
+.pt-sec2-cardghexe-cot2 .pt-sec2-chitiet-cardghexe {
+    top: 22px;
+    margin-top: 46px;
+}
+#pt-section2 .pt-sec2-ghexe .pt-sec2-column .pt-sec2-cardghexe .pt-sec2-chitiet-cardghexe:before, .pt-sec2-cardghexe-cot2 .pt-sec2-chitiet-cardghexe:before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border: 70px solid black;
+    border-top: 35px solid white;
+    border-right: 35px solid white;
+}
+#pt-section2 .pt-sec2-ghexe .pt-sec2-column .pt-sec2-cardghexe .pt-sec2-chitiet-cardghexe:hover, .pt-sec2-cardghexe-cot2 .pt-sec2-chitiet-cardghexe:hover {
+    transform: translateX(30px);
+}
+#pt-section2 .pt-sec2-ghexe .pt-sec2-column .pt-sec2-cardghexe .pt-sec2-chitiet-cardghexe img , .pt-sec2-cardghexe-cot2 .pt-sec2-chitiet-cardghexe img{
+    width: 150px;
+    height: auto;
+    border-radius: 3px;
+}
+#pt-section2 .pt-sec2-ghexe .pt-sec2-column .pt-sec2-cardghexe .pt-sec2-chitiet-cardghexe button, .pt-sec2-cardghexe-cot2 .pt-sec2-chitiet-cardghexe button {
+    background: #B71C1C;
+    width: 25%;
+    height: 30%;
+    margin-top: 55px;
+    border-radius: 5px;
+    transform: skewX(-30deg);
+    border: none;
+    transition: all 0.4s ease;
+}
+#pt-section2 .pt-sec2-ghexe .pt-sec2-column .pt-sec2-cardghexe .pt-sec2-chitiet-cardghexe button:hover, .pt-sec2-cardghexe-cot2 .pt-sec2-chitiet-cardghexe button:hover {
+    background: white;
+}
+#pt-section2 .pt-sec2-ghexe .pt-sec2-column .pt-sec2-cardghexe .pt-sec2-chitiet-cardghexe button a , .pt-sec2-cardghexe-cot2 .pt-sec2-chitiet-cardghexe button a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all 0.4s ease;
+}
+#pt-section2 .pt-sec2-ghexe .pt-sec2-column .pt-sec2-cardghexe .pt-sec2-chitiet-cardghexe button a:hover , .pt-sec2-cardghexe-cot2 .pt-sec2-chitiet-cardghexe button a:hover {
+    color: #B71C1C;
+}
+#pt-section2 .pt-sec2-ghexe .pt-sec2-column .pt-sec2-cardghexe .pt-sec2-chitiet-cardghexe p, .pt-sec2-cardghexe-cot2 .pt-sec2-chitiet-cardghexe p {
+    color: white;
+    margin: 45px 10px 45px 10px;
+}
+.pt-sec2-tieude {
+    width: 100%;
+    text-align: right;
+}
+.pt-sec2-tieude h2 {
+    color: white;
+    font-size: 27px;
+    text-transform: uppercase;
+    font-weight: 200;
+    padding-top: 115px;
+    padding-left: 140px;
+    text-align: left;
+    position: relative;
+    z-index: 1;
+}
+.pt-sec2-tieude h2:before {
+    content: '';
+    position: absolute;
+    top: 107px;
+    left: 100px;
+    width: 330px;
+    height: 56px;
+    background-color: #B71C1C;
+    transform: skewX(-18deg);
+    z-index: -1;
+    transition: all 0.5s ease;
+}
+.pt-sec2-tieude h2:hover:before {
+    background-color: #9b0b0b;
+}
+.pt-sec2-tieude h2 span {
+    color: black;
+    font-size: 21px;
+    font-style: italic;
+}
+.pt-sec2-tieude p {
+    color: black;
+    text-align: center;
+    font-size: 21px;
+    font-style: italic;
+    margin-left: -20px;
+    position: relative;
+}
+.pt-sec2-tieude p:after {
+    content: '';
+    position: absolute;
+    top: 35px;
+    left: 103px;
+    width: 85px;
+    height: 3px;
+    background-color: #B71C1C;
+    transition: all 0.4s ease;
+}
+.pt-sec2-tieude p:hover:after {
+    width: 170px;
+}
+
+
+
+
+/* Section3 Đèn xe Lamborghini */
+#pt-section3 {
+    width: 100%;
+    height: 100vh;
+}
+.pt-sec3-flex-container {
+    width: 100%;
+    height: 100vh;
+    background: white;
+    border-top: 1px solid #B6BABA;
+}
+.pt-sec3-row1 {
+    width: 100%;
+    height: 35%;
+}
+.pt-sec3-row1-tieude {
+    width: 100%;
+    height: 50%;
+    background: white;
+    margin-top: 135px;
+}
+.pt-sec3-row1-tieude h2 {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 27px;
+    font-weight: 300;
+    position: relative;
+    z-index: 1;
+}
+.pt-sec3-row1-tieude h2:before {
+    content: '';
+    position: absolute;
+    bottom: 4px;
+    left: 40%;
+    width: 115px;
+    height: 45px;
+    background-color: #B71C1C;
+    z-index: -1;
+}
+.pt-sec3-row1-tieude h2 span {
+    color: black;
+    font-size: 23px;
+    font-style: italic;
+    position: relative;
+}
+.pt-sec3-row1-tieude p {
+    color: black;
+    text-align: center;
+    font-size: 21px;
+    font-style: italic;
+    position: relative;
+}
+.pt-sec3-row1-tieude p:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 29%;
+    width: 140px;
+    height: 3px;
+    background: #B71C1C;
+    transition: all 0.5s ease;
+}
+.pt-sec3-row1-tieude p:hover:before {
+    width: 280px;
+}
+.pt-sec3-row2 {
+    background-image: linear-gradient(to top , #B6BABA, white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: -80px;
+    width: 100%;
+    height: 65%;
+    transform-style: preserve-3d;
+}
+.pt-sec3-row2-carddenxe {
+    width: 225px;
+    height: 250px;
+    margin-bottom: 90px;
+    margin-left: 30px;
+    margin-right: 30px;
+    position: relative;
+    background: rgba(248, 137, 137, 0.1);
+    box-shadow: 0 15px 25px rgba( 0, 0, 0, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 7px;
+    transform-style: preserve-3d;
+    transition: 0.5s;
+}
+.pt-sec3-row2-carddenxe:hover {
+    width: 225px;
+    height: 310px;
+}
+.pt-sec3-row2-carddenxe img {
+    width: 225px;
+    height: 190px;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    transition: 0.5s;
+    z-index: 12;
+}
+.pt-sec3-row2-carddenxe:hover img {
+    transform: translateY(30deg);
+    top: 0;
+    left: 0;
+    height: 160px;
+}
+.pt-sec3-row2-carddenxe p {
+    position: absolute;
+    top: 70%;
+    left: 0;
+    text-align: center;
+    font-size: 16px;
+    color: black;
+    width: 100%;
+    transform-style: preserve-3d;
+    transform: translate3d(0,0,7px);
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 10;
+    position: relative;
+}
+.pt-sec3-row2-carddenxe:hover p {
+    opacity: 1;
+    top: 160px;
+}
+.pt-sec3-row2-carddenxe button {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform-style: preserve-3d;
+    transform: translate3d(-50%,0,75px);
+    color: white;
+    background: #B71C1C;
+    padding: 10px 25px;
+    border: 2px solid #B71C1C;
+    border-radius: 30px;
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 10;
+}
+.pt-sec3-row2-carddenxe button:hover {
+    background-color: #960505;
+    border: 2px solid #960505;
+}
+.pt-sec3-row2-carddenxe button a {
+    color: white;
+}
+.pt-sec3-row2-carddenxe:hover button {
+    bottom: 25px;
+    opacity: 1;
+}
+
+
+
+
+/* Section4 Bánh xe Lamborghini */
+#pt-section4 {
+    width: 100%;
+    height: 100vh;
+}
+.pt-sec4-container {
+    display: flex;
+    flex-direction: column;
+}
+.pt-sec4-container-row1 {
+    width: 100%;
+    height: 40vh;
+}
+.pt-sec4-tieude h2 {
+    color: black;
+    font-size: 27px;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 125px;
+    text-transform: uppercase;
+    position: relative;
+}
+.pt-sec4-tieude h3 {
+    color: black;
+    text-align: center;
+    font-style: italic;
+    font-size: 19px;
+    position: relative;
+    z-index: 1;
+}
+.pt-sec4-tieude h3:before {
+    content: '';
+    position: absolute;
+    top: 29px;
+    left: 60%;
+    width: 56px;
+    height: 3px;
+    background-color: #B71C1C;
+    z-index: -1;
+}
+.pt-sec4-tieude h2 span {
+    color: white;
+    font-size: 23px;
+    font-style: italic;
+    position: relative;
+    z-index: 1;
+}
+.pt-sec4-tieude h2 span:before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 160px;
+    height: 35px;
+    background-color: #B71C1C;
+    transform: skewX(-12deg);
+    z-index: -1;
+}
+.pt-sec4-container-row2 {
+    width: 100%;
+    height: 60vh;
+    background-image: linear-gradient(to bottom , white, #B6BABA);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pt-sec4-column1-row1-cardbanhxe {
+    width: 230px;
+    height: 230px;
+    background-color: #B71C1C;
+    margin: 0 auto;
+    transition: all 0.5s ease;
+    z-index: 2;
+    box-shadow: 0 15px 25px rgba( 0, 0, 0, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+}
+.pt-sec4-column1-row1-cardbanhxe:hover {
+    width: 230px;
+    height: 320px;
+}
+.pt-sec4-column1-row1-cardbanhxe img {
+    width: 230px;
+    height: 180px;
+    z-index: 3;
+}
+.pt-sec4-column1-row1-cardbanhxe p {
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 60px;
+    z-index: 1;
+    opacity: 0;
+    transition: 0.5s;
+}
+.pt-sec4-column1-row1-cardbanhxe:hover p {
+    margin-top: 0;
+    opacity: 1;
+}
+.pt-sec4-column1-row1-cardbanhxe button {
+    width: 120px;
+    height: 40px;
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    transition: 0.5s;
+    opacity: 0;
+}
+.pt-sec4-column1-row1-cardbanhxe button:hover {
+    background-color: rgb(224, 215, 215);
+    border: 2px solid rgb(224, 215, 215);
+}
+.pt-sec4-column1-row1-cardbanhxe:hover button {
+    margin-left: 50px;
+    opacity: 1;
+}
+.pt-sec4-column1-row1-cardbanhxe button a {
+    color: #B71C1C;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+/* Hết phần CSS trang PHỤ TÙNG */
+
+
+
+
+/* Phần CSS BẢO DƯỠNG VÀ BẢO HÀNH XE */
+.row-csvbh-main .csvbh-container {
+    width: 100%;
+    height: 100%;
+}
+.row-csvbh-main .csvbh-container section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+.csvbh-main-iconplace {
+    top: 270px;
+    left: 5px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.5s ease;
+    z-index: 100;
+}
+.csvbh-main-iconplace a {
+    color: red;
+    font-size: 1.6em;
+    margin-bottom: 5px;
+    transition: all 0.5s ease;
+}
+.csvbh-main-iconplace a:hover {
+    transform: scale(1.4);
+}
+.csvbh-main-iconplace a img {
+    width: 37px;
+    height: auto;
+}
+
+/* Section 1 Giới Thiệu về Bảo dưỡng và Bảo hành xe */
+#csvbh-section1 {
+    width: 100%;
+    height: 100vh;
+}
+.csvbh-sec1-container-row1 {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+}
+.csvbh-sec1-container-row2 {
+    width: 100%;
+    height: 60vh;
+    background-image: linear-gradient(to top, white, #B6BABA);
+}
+.csvbh-sec1-container-row1-column1 {
+    width: 50%;
+    height: 40vh;
+    background-color: #B6BABA;
+}
+.csvbh-sec1-container-row1-column1 img {
+    width: 105px;
+    height: auto;
+    margin-top: 145px;
+    margin-right: 20px;
+    float: right;
+}
+.csvbh-sec1-container-row1-column2 {
+    width: 50%;
+    height: 40vh;
+    background-color: #B6BABA;
+}
+.csvbh-sec1-container-column2-tieude {
+    width: 600px;
+    height: 160px;
+    margin-top: 145px;
+}
+.csvbh-sec1-container-column2-tieude h2 {
+    color: black;
+    font-size: 27px;
+    font-weight: 300;
+    text-transform: uppercase;
+    position: relative;
+}
+.csvbh-sec1-container-column2-tieude h2:before {
+    content: '';
+    position: absolute;
+    top: 39px;
+    left: 0;
+    width: 170px;
+    height: 3px;
+    background-color: #B71C1C;
+}
+.csvbh-sec1-container-column2-tieude h2 span {
+    color: white;
+    font-size: 25px;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-style: italic;
+    position: relative;
+    z-index: 1;
+}
+.csvbh-sec1-container-column2-tieude h2 span:before {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    width: 150px;
+    height: 40px;
+    background-color: #B71C1C;
+    z-index: -1;
+    transform: skewX(-15deg);
+    transition: all 0.5s ease;
+}
+.csvbh-sec1-container-column2-tieude h2 span:hover:before {
+    background-color: #ad1212;
+}
+.csvbh-sec1-container-row2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.csvbh-sec1-container-row2 img {
+    width: 400px;
+    height: auto;
+    margin-right: -20px;
+    margin-left: -80px;
+}
+
+/* Section2 Bảo dưỡng trang 1 */
+#csvbh-section2 .csvbh-sec2-container {
+    display: flex;
+    flex-direction: row;
+}
+.csvbh-sec2-column1, .csvbh-sec2-column2 {
+    width: 50%;
+    height: 100vh;
+    background: white;
+    margin-left: 10px;
+}
+.csvbh-sec2-column1 h2 {
+    color: #B71C1C;
+    padding-left: 40px;
+    padding-top: 110px;
+    font-size: 25px;
+    text-transform: uppercase;
+    position: relative;
+    display: block;
+}
+.csvbh-sec2-column1 h2:before {
+    content: "";
+    position: absolute;
+    top: 150px;
+    left: 42px;
+    width: 60px;
+    height: 4px;
+    background: #B71C1C;
+    transition: all 0.5s ease;
+}
+.csvbh-sec2-column1 h2:hover:before {
+    width: 130px;
+}
+.csvbh-sec2-column1 h3 {
+    color: #B6BABA;
+    padding-left: 40px;
+    padding-top: 7px;
+    font-size: 20px;
+    font-style: italic;
+    position: relative;
+}
+.csvbh-sec2-column1 h3:before {
+    content: "";
+    position: absolute;
+    top: 43px;
+    left: 40px;
+    width: 90px;
+    height: 4px;
+    background: #B71C1C;
+    transition: all 0.5s ease;
+}
+.csvbh-sec2-column1 h3:hover:before {
+    width: 200px;
+}
+.csvbh-sec2-column1 img {
+    width: 529px;
+    height: auto;
+    margin: 5px 40px;
+    border-radius: 2px;
+}
+.csvbh-sec2-column2 h3 {
+    color: #B6BABA;
+    padding-left: 40px;
+    padding-top: 180px;
+    font-size: 20px;
+    font-style: italic;
+    position: relative;
+}
+.csvbh-sec2-column2 h3:before {
+    content: "";
+    position: absolute;
+    top: 217px;
+    left: 40px;
+    width: 90px;
+    height: 4px;
+    background: #B71C1C;
+    transition: all 0.5s ease;
+}
+.csvbh-sec2-column2 h3:hover:before {
+    width: 200px;
+}
+.csvbh-sec2-column2 ul {
+    margin-top: 20px;
+    width: 610px;
+    height: auto;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 15px 25px rgba( 0, 0, 0, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.csvbh-sec2-column2 ul li {
+    list-style: none;
+    color: black;
+    padding-top: 5px;
+    margin-top: 10px;
+    margin-left: -1px;
+    margin-right: 1px;
+	margin-bottom: 10px;
+    font-size: 16px;
+}
+.csvbh-sec2-column2 ul li i {
+    color: #B71C1C;
+    margin: 0 7px;
+}
+.csvbh-sec2-column2 button {
+    display: block;
+    background: #B71C1C;
+    border-radius: 1px;
+    border: 2px solid #B71C1C;
+    width: 22%;
+    height: 40px;
+    margin-top: 15px;
+    transition: all 0.4s ease;
+}
+.csvbh-sec2-column2 button:hover {
+    transform: translateX(12px);
+    background: #8f1616;
+}
+.csvbh-sec2-column2 button a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+/* Section3 Bảo dưỡng trang 2 */
+#csvbh-section3 .csvbh-sec3-container {
+    display: flex;
+    flex-direction: row;
+    background: #B6BABA;
+}
+.csvbh-sec3-column1, .csvbh-sec3-column2 {
+    width: 50%;
+    height: 100vh;
+    margin-left: 12px;
+}
+.csvbh-sec3-column1 h3 {
+    color: white;
+    padding-left: 37px;
+    padding-top: 115px;
+    font-size: 20px;
+    font-style: italic;
+    position: relative;
+    display: block;
+}
+.csvbh-sec3-column1 h3:before {
+    content: "";
+    position: absolute;
+    top: 150px;
+    left: 40px;
+    width: 90px;
+    height: 4px;
+    background: #B71C1C;
+    transition: all 0.5s ease;
+}
+.csvbh-sec3-column1 h3:hover:before {
+    width: 200px;
+}
+.csvbh-sec3-column1 ul {
+    width: 90%;
+    height: 40%;
+    margin: 55px 20px 10px 35px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 15px 25px rgba( 0, 0, 0, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.csvbh-sec3-column1 ul li {
+    list-style: none;
+    line-height: 35px;
+    margin-top: 20px;
+    margin-left: 7px;
+    font-size: 16px;
+}
+.csvbh-sec3-column1 ul li i {
+    color: #B71C1C;
+    margin: 0 10px;
+}
+.csvbh-sec3-column1 button {
+    background-color: #B71C1C;
+    border: 2px solid #B71C1C;
+    border-radius: 1px;
+    width: 18%;
+    height: 38px;
+    margin-top: 3px;
+    margin-left: 35px;
+    transition: all 0.4s ease;
+}
+.csvbh-sec3-column1 button:hover {
+    background-color: #9b1818;
+    transform: translateX(20px);
+}
+.csvbh-sec3-column1 button a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.csvbh-sec3-column2 h2 {
+    color: #B71C1C;
+    font-size: 25px;
+    padding-top: 110px;
+    padding-left: 40px;
+    position: relative;
+    text-transform: uppercase;
+}
+.csvbh-sec3-column2 h2:before {
+    content: "";
+    position: absolute;
+    top: 150px;
+    left: 40px;
+    width: 50px;
+    height: 4px;
+    background: #B71C1C;
+    transition: all 0.5s ease;
+}
+.csvbh-sec3-column2 h2:hover:before {
+    width: 120px;
+}
+.csvbh-sec3-column2 h3 {
+    color: white;
+    font-size: 20px;
+    font-style: italic;
+    padding-top: -2px;
+    padding-left: 38px;
+    position: relative;
+}
+.csvbh-sec3-column2 h3:before {
+    content: "";
+    position: absolute;
+    top: 35px;
+    left: 40px;
+    width: 90px;
+    height: 4px;
+    background: #B71C1C;
+    transition: all 0.5s ease;
+}
+.csvbh-sec3-column2 h3:hover:before {
+    width: 200px;
+}
+.csvbh-sec3-column2 img {
+    width: 530px;
+    height: auto;
+    margin-top: -6px;
+    margin-left: 39px;
+    border-radius: 2px;
+}
+
+/* Section4 Bảo dưỡng trang 3 */
+#csvbh-section4 .csvbh-sec4-container {
+    display: flex;
+    flex-direction: row;
+    background: white;
+}
+.csvbh-sec4-column1, .csvbh-sec4-column2 {
+    width: 50%;
+    height: 100vh;
+    margin-left: 12px;
+}
+.csvbh-sec4-column1 h3 {
+    color: #B6BABA;
+    padding-left: 37px;
+    padding-top: 175px;
+    font-size: 20px;
+    font-style: italic;
+    position: relative;
+    display: block;
+}
+.csvbh-sec4-column1 h3:before {
+    content: "";
+    position: absolute;
+    top: 209px;
+    left: 38px;
+    width: 90px;
+    height: 4px;
+    background: #B71C1C;
+    transition: all 0.5s ease;
+}
+.csvbh-sec4-column1 h3:hover:before {
+    width: 200px;
+}
+.csvbh-sec4-column1 ul {
+    width: 570px;
+    height: auto;
+    margin: 21px 20px 10px 35px;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 15px 25px rgba( 0, 0, 0, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.csvbh-sec4-column1 ul li {
+    list-style: none;
+    margin-top: 20px;
+    margin-left: 2px;
+	margin-bottom: 20px;
+    font-size: 16px;
+}
+.csvbh-sec4-column1 ul li i {
+    color: #B71C1C;
+    margin: 0 10px;
+}
+.csvbh-sec4-column1 button {
+    background-color: #B71C1C;
+    border: 2px solid #B71C1C;
+    border-radius: 1px;
+    width: 18%;
+    height: 38px;
+    margin-top: 3px;
+    margin-left: 35px;
+    transition: all 0.4s ease;
+}
+.csvbh-sec4-column1 button:hover {
+    background-color: #9b1818;
+    transform: translateX(20px);
+}
+.csvbh-sec4-column1 button a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.csvbh-sec4-column2 h2 {
+    color: #B71C1C;
+    font-size: 25px;
+    padding-top: 110px;
+    padding-left: 40px;
+    position: relative;
+    text-transform: uppercase;
+}
+.csvbh-sec4-column2 h2:before {
+    content: "";
+    position: absolute;
+    top: 150px;
+    left: 40px;
+    width: 50px;
+    height: 4px;
+    background: #B71C1C;
+    transition: all 0.5s ease;
+}
+.csvbh-sec4-column2 h2:hover:before {
+    width: 120px;
+}
+.csvbh-sec4-column2 h3 {
+    color: #B6BABA;
+    font-size: 20px;
+    font-style: italic;
+    padding-top: 1px;
+    padding-left: 39px;
+    position: relative;
+}
+.csvbh-sec4-column2 h3:before {
+    content: "";
+    position: absolute;
+    top: 35px;
+    left: 40px;
+    width: 90px;
+    height: 4px;
+    background: #B71C1C;
+    transition: all 0.5s ease;
+}
+.csvbh-sec4-column2 h3:hover:before {
+    width: 200px;
+}
+.csvbh-sec4-column2 img {
+    width: 490px;
+    height: auto;
+    margin-top: 1px;
+    margin-left: 39px;
+    border-radius: 2px;
+}
+
+/* Section5 Bảo hành trang 1 */
+#csvbh-section5 .csvbh-sec5-container {
+    display: flex;
+    flex-direction: row;
+    background: #B6BABA;
+}
+.csvbh-sec5-column1, .csvbh-sec5-column2 {
+    width: 50%;
+    height: 100vh;
+    background: #B6BABA;
+    margin-left: 12px;
+}
+.csvbh-sec5-column1 h2 {
+    color: #B71C1C;
+    padding-left: 40px;
+    padding-top: 110px;
+    font-size: 25px;
+    text-transform: uppercase;
+    position: relative;
+    display: block;
+}
+.csvbh-sec5-column1 h2:before {
+    content: "";
+    position: absolute;
+    top: 150px;
+    left: 42px;
+    width: 60px;
+    height: 4px;
+    background: #B71C1C;
+    transition: all 0.5s ease;
+}
+.csvbh-sec5-column1 h2:hover:before {
+    width: 130px;
+}
+.csvbh-sec5-column1 h3 {
+    color: white;
+    padding-left: 40px;
+    padding-top: 10px;
+    font-size: 20px;
+    font-style: italic;
+    position: relative;
+}
+.csvbh-sec5-column1 h3:before {
+    content: "";
+    position: absolute;
+    top: 45px;
+    left: 40px;
+    width: 90px;
+    height: 4px;
+    background: #B71C1C;
+    transition: all 0.5s ease;
+}
+.csvbh-sec5-column1 h3:hover:before {
+    width: 200px;
+}
+.csvbh-sec5-column1 img {
+    width: 590px;
+    height: auto;
+    margin: 2px 39px;
+    border-radius: 2px;
+}
+.csvbh-sec5-column2 h3 {
+    color: white;
+    padding-left: 40px;
+    padding-top: 185px;
+    font-size: 20px;
+    font-style: italic;
+    position: relative;
+}
+.csvbh-sec5-column2 h3:before {
+    content: "";
+    position: absolute;
+    top: 219px;
+    left: 42px;
+    width: 90px;
+    height: 4px;
+    background: #B71C1C;
+    transition: all 0.5s ease;
+}
+.csvbh-sec5-column2 h3:hover:before {
+    width: 200px;
+}
+.csvbh-sec5-column2 ul {
+    margin-top: 11px;
+    width: 595px;
+    height: auto;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 15px 25px rgba( 0, 0, 0, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.csvbh-sec5-column2 ul li {
+    list-style: none;
+    color: black;
+    padding-top: 1px;
+	padding-bottom: 15px;
+    margin-top: 10px;
+    margin-left: 1px;
+    margin-right: 1px;
+    font-size: 16px;
+}
+.csvbh-sec5-column2 ul li i {
+    color: #B71C1C;
+    margin: 0 7px;
+}
+.csvbh-sec5-column2 button {
+    display: block;
+    background: #B71C1C;
+    border-radius: 1px;
+    border: 2px solid #B71C1C;
+    width: 22%;
+    height: 40px;
+    margin-top: 15px;
+    transition: all 0.4s ease;
+}
+.csvbh-sec5-column2 button:hover {
+    transform: translateX(12px);
+    background: #8f1616;
+}
+.csvbh-sec5-column2 button a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+/* Section6 Bảo hành trang 2 */
+#csvbh-section6 .csvbh-sec6-container {
+    display: flex;
+    flex-direction: row;
+    background: white;
+}
+.csvbh-sec6-column1, .csvbh-sec6-column2 {
+    width: 50%;
+    height: 100vh;
+    margin-left: 12px;
+}
+.csvbh-sec6-column1 h3 {
+    color: #B6BABA;
+    padding-left: 37px;
+    padding-top: 178px;
+    font-size: 20px;
+    font-style: italic;
+    position: relative;
+    display: block;
+}
+.csvbh-sec6-column1 h3:before {
+    content: "";
+    position: absolute;
+    top: 214px;
+    left: 37px;
+    width: 90px;
+    height: 4px;
+    background: #B71C1C;
+    transition: all 0.5s ease;
+}
+.csvbh-sec6-column1 h3:hover:before {
+    width: 200px;
+}
+.csvbh-sec6-column1 ul {
+    width: 590px;
+    height: auto;
+    margin: 22px 20px 10px 35px;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 15px 25px rgba( 0, 0, 0, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.csvbh-sec6-column1 ul li {
+    list-style: none;
+    margin-top: 20px;
+    margin-left: 1px;
+	margin-bottom: 20px;
+    font-size: 16px;
+}
+.csvbh-sec6-column1 ul li i {
+    color: #B71C1C;
+    margin: 0 10px;
+}
+.csvbh-sec6-column1 button {
+    background-color: #B71C1C;
+    border: 2px solid #B71C1C;
+    border-radius: 1px;
+    width: 18%;
+    height: 38px;
+    margin-top: 3px;
+    margin-left: 35px;
+    transition: all 0.4s ease;
+}
+.csvbh-sec6-column1 button:hover {
+    background-color: #9b1818;
+    transform: translateX(20px);
+}
+.csvbh-sec6-column1 button a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.csvbh-sec6-column2 h2 {
+    color: #B71C1C;
+    font-size: 25px;
+    padding-top: 110px;
+    padding-left: 40px;
+    position: relative;
+    text-transform: uppercase;
+}
+.csvbh-sec6-column2 h2:before {
+    content: "";
+    position: absolute;
+    top: 149px;
+    left: 42px;
+    width: 50px;
+    height: 4px;
+    background: #B71C1C;
+    transition: all 0.5s ease;
+}
+.csvbh-sec6-column2 h2:hover:before {
+    width: 120px;
+}
+.csvbh-sec6-column2 h3 {
+    color:#B6BABA;
+    font-size: 20px;
+    font-style: italic;
+    padding-top: 5px;
+    padding-left: 38px;
+    position: relative;
+}
+.csvbh-sec6-column2 h3:before {
+    content: "";
+    position: absolute;
+    top: 40px;
+    left: 38px;
+    width: 90px;
+    height: 4px;
+    background: #B71C1C;
+    transition: all 0.5s ease;
+}
+.csvbh-sec6-column2 h3:hover:before {
+    width: 200px;
+}
+.csvbh-sec6-column2 img {
+    width: 570px;
+    height: auto;
+    margin-top: 1px;
+    margin-left: 39px;
+    border-radius: 2px;
+}
+/* Hết phần CSS trang BẢO DƯỠNG VÀ BẢO HÀNH XE */
+
+
+
+
+
+/* phần footer */
+footer{
+	color: white;
+	background-color: black;
+	width: 100%;
+}
+
+footer .divFooter1{
+	display: flex;
+	justify-content: center;	
+}
+
+footer .divFooter1 div{
+	width: 20%;
+	padding-top: 5px;
+	display: inline-block;
+	text-align: justify;
+	margin: 10px 30px;
+	align-self: flex-start;
+}
+
+footer .divFooter2{
+	text-align: center;
+	padding: 15px 0;
+}
+
+footer .footer-straight-line:before {
+	content: "";
+	display: block;
+	position: relative;
+	background-color: #B71C1C;
+	height: 2px;
+	box-sizing: border-box;
+	width: 13%;
+	top: 35px;
+}
+
+footer .superCarFooter-link1 a{
+	display: block;
+	margin-left: -40px;
+	transition: all 0.4s ease;
+}
+
+footer .superCarFooter-link1 a:hover, footer .superCarFooter-link3 i:hover {
+  	color: #B71C1C;
+  	transform: translateX(10px);
+}
+
+footer .superCarFooter-link2 p i{
+	margin-right: 10px;
+}
+
+footer .superCarFooter-link3 i{
+	margin-right: 25px;
+	transition: all 0.4s ease;
+}
+
+footer .footer-line{
+	height: 1px;
+	width: 100%;
+	background-color: #B71C1C;
+}
+/* hết phần footer */
+
+
