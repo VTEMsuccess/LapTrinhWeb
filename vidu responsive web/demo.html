@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>Grid Layout for a Reponsive Web </title>
+        <meta charset="utf-8">
+        <meta name="robots" content="noindex, nofollow">
+		<style type="text/css">
+		* {box-sizing: border-box;}
+		body {
+			max-width: 1024px;
+			margin: 0 auto;
+			font: 1.2em Helvetica, arial, sans-serif;
+			display: grid;
+			gap: 20px;
+			grid-template-areas:
+			"header-cell"	
+			"nav-cell"
+			"main-cell"
+			"footer-cell";
+		  }
+		body > * {
+			border: 2px solid #f08c00;
+			background-color: #ffec99;
+			border-radius: 5px;
+			padding: 10px;
+		 }
+		header {
+		  grid-area: header-cell;
+		  text-align:center;
+		}
+		nav{
+			grid-area: nav-cell;
+			margin: 0;
+			padding: 0;
+			display: grid;
+			grid-template-columns: auto;
+		  }
+		nav a
+		{	
+			text-decoration:none;
+			text-align:center;
+			border: 1px solid #134007;
+			background-color: #ccdeea;
+			border-radius: 5px;
+			padding: 2px;
+			margin:2px;
+			height:30px;
+		}
+		main {
+		  grid-area: main-cell;
+		  display: grid;
+		  gap: 20px;
+		  grid-template-areas:"leftside-cell" "article-cell" "rightside-cell";
+		}
+		article
+		{
+			grid-area:article-cell;
+			display: grid;
+			grid-template-columns: auto; 
+			
+		}
+		article div
+		{
+			border: 1px solid #134007;
+			background-color: #2fc82b;
+			border-radius: 5px;
+			padding: 5px;
+			margin:2px;
+			height:120px;
+			text-align:center;
+		} 
+		.leftside {
+		  grid-area: leftside-cell;
+		  
+		  
+		}
+		.righside {
+		  grid-area: rightside-cell;
+		}
+		footer {
+		  grid-area: footer-cell;
+		  text-align:center;
+		}
+		.sidebar
+		{	border: 1px solid #032e58;
+			background-color: #a9d4fe;
+			border-radius: 5px;
+			padding: 5px;
+			margin:2px;
+			text-align:center;
+		}
+		@media (min-width: 500px) {
+			main {    
+				grid-template-columns: auto 2fr auto;
+				grid-template-areas: "leftside-cell article-cell rightside-cell";
+			}
+			nav {
+				grid-template-columns: repeat(auto-fit,minmax(160px, 1fr));
+			}
+			article
+			{
+				display: grid; 
+				grid-template-columns: repeat(auto-fill,minmax(160px, 1fr)); 
+			}
+		}
+
+		@media (min-width: 700px) {
+			main {
+				grid-template-columns: auto 4fr auto;
+				grid-template-areas:"leftside-cell article-cell rightside-cell";
+		   }
+		}
+		</style>        
+    </head>
+    <body >
+		<header>Header</header>
+			<nav>
+				<a href="">Link 1</a>
+				<a href="">Link 2</a>
+				<a href="">Link 3</a>
+			</nav>
+		<main>
+			<aside class="leftside sidebar">Left Sidebar</aside>
+			<article class="content">  
+				<div>Item 1</div>
+				<div>Item 2</div>
+				<div>Item 3</div>
+				<div>Item 4</div>		
+			</article>
+			<aside class="rightside sidebar">Right Sidebar</aside>
+		</main>
+		<footer class="main-footer">Footer</footer>     
+	</body>
+</html>
