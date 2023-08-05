@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký Thành Viên</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <style type="text/css">
+        nav, .tc1{
+            font-family:Helvetica,Arial,sans-serif;
+            width: 1024px;
+            height: 100px;
+            color:red;
+            border-radius: 5px;
+           text-align:right;
+           border: 1px;
+        }
+        nav a:hover{
+	        color: #fff;
+	        background-color: #ed4190;
+            
+          }
+        
+    </style>
+    <script type="text/javascript">
+        
+function formValidation(frm) {
+	var emailReg = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{6,}$/; 
+	if(frm.email){
+		if (emailReg.test(frm.email.value) == false ){
+		 	alert("Email không hợp lệ!!");
+		 	frm.email.focus();
+		 	return false;
+	 	}
+	}
+		
+ 	if(frm.psw){
+ 		if(frm.psw.value.length < 7){
+ 			alert("Password phải tối thiểu từ 6 kí tự trở lên!!");
+ 			frm.psw.focus();
+ 			return false;
+ 		}
+	}
+
+	if(frm.psw1){
+ 		if(frm.psw1.value.length < 7){
+ 			alert("Password nhập lại tối thiểu 6 kí tự trở lên!!");
+ 			frm.psw1.focus();
+ 			return false;
+ 		}
+ 		if(frm.psw.value != frm.psw1.value){
+ 			alert("Password nhập lại sai!!");
+ 			frm.psw1.focus();
+ 			return false;
+ 		}
+	}
+
+	if(frm.fullName){
+		if(frm.fullName.value.length < 6){ 
+ 			alert("Họ tên phải tối thiểu kí tự trở lên!!");
+ 			frm.fullName.focus();
+ 			return false;
+ 		}
+	}
+ 	if(frm.inputArea){
+ 		if(frm.inputArea.value.length < 7){
+ 			alert("Vùng nhập liệu phải tối thiểu 6 kí tự trở lên!!");
+ 			frm.inputArea.focus();
+ 			return false;
+ 		}
+ 	}
+ 	
+ 	alert("Dữ liệu đã được gửi đi!!");
+ 	return true;
+}
+    </script>
+   
+
+
+</head>
+<body>
+    
+    <header> 
+        
+        <form method="get" action="timkiem.html" onSubmit="return handleSearchSubmit(event)">
+            <input type="text" placeholder="nhập nội dung cần tìm..." id="txtSearch" name="txtSearch">
+            <button type="submit">Tìm</i></button>
+            
+        </form>
+        <nav>
+            <a class="tc1" href="dangkythanhvien.html">Đăng Ký Thành Viên</a>
+            <a class="tc1" href="vatphamluuniem.html">Vật Phẩm Lưu Niệm</a>  
+            <a id="" href="trangchu.html">Trang Chủ</a>
+        </nav>
+        
+    </header>
+    <main>
+        <article>
+            
+         <fieldset>
+            <center><h1>ĐĂNG KÝ THÀNH VIÊN</h1></center>
+            <form action="timkiem.html" method="post" name="frmlogin" autocomplete="off" onsubmit="return formValidation(this)">
+
+                Họ Tên: <input type="text" name="txtuserName" placeholder="nhập họ tên" size="30" value="" maxlength="40">
+                <br><br>
+                Ảnh Đại Diện (chỉ chấp nhận tập tin ảnh):&nbsp;<input type="file" accept="image/*">
+                <br><br>
+                Giới tính: <input type="radio" name="radio"> Nam 
+                            <input type="radio" name="radio"> Nữ
+                <br><br>
+                Cấp độ Thành Viên: <select name="locale" id="" >
+                    <option value="">--chọn loại thành viên</option>
+                    <option value="ct">xanh</option>
+                    <option value="hn">Đỏ</option>
+                    <option value="tphcm">Vàng</option>
+                </select>
+                <br><br>
+                Mô Tả Bản Thân: 
+                <br><br>
+                <textarea name="address" id="" cols="10" rows="10" placeholder="enter address hêr">
+                </textarea>
+                <br><br>
+                <input type="checkbox" name="t" > Tôi đã hiểu và chấp nhận điều khoản.
+                <br><br>
+                <input type="submit" value="Đăng ký"> 
+                <br> 
+    
+             </form>   
+            </fieldset>
+  
+            
+        </article>
+       
+    </main>
+<footer> 
+        <p>&copy 2021 Bản quyền thuộc về <b>Võ Thành Em</b></p>       
+</footer>
+</body>
+</html>
