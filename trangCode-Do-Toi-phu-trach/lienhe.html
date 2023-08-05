@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <title>Liên Hệ</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo/logo-shortcut-icon.png" >
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="index.css" type="text/css">
+    <script type="text/javascript" src="index.js" ></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="headerUser">
+        <ul class="ulHeaderUser">
+          <li>
+            <a class="aFontColor aClickUser" onclick="clickToSignin()"><i class="fas fa-user"></i></a>
+            <div id="divSignin">
+              <h4 class="UserHere">Đăng nhập tài khoản SUPER CAR</h4>
+              <p class="pRegisterHere UserHere">Đăng ký tại đây.</p>
+              <div class="divSigninUser"><a class="aSigninUser" href="dangnhap.html">ĐĂNG NHẬP</a></div>
+              <div class="divSigninUser"><a class="aRegisterUser" href="dangky.html">ĐĂNG KÝ</a></div>
+            </div>
+          </li>
+          <li>
+            <input class="searchHeader" type="text" name="search">
+            <a class="aFontColor aClickUser" href="timkiem.html"><i class="fas fa-search"></i></a>
+          </li>  
+        </ul>
+      </div>  
+
+      <div class="divHeader">
+        <nav class="navHeader">
+          <div>
+            <img class="logoHeader" src="img/logo/logo-car.jpg">
+          </div>
+          <ul class="ulParent1">
+            <li class="liParent1"><a id="tc" href="trangchu.html">TRANG CHỦ</a></li>
+            <li class="liParent1">
+              <a href="gioithieu.html">GIỚI THIỆU</a>
+            </li>
+            <li class="liParent1">
+              <a href="dongxe.html">DÒNG XE</a>
+              <ul class="ulParent2">
+                <li><a href="dongxe.html#dx-urus">URUS</a>
+                <li><a href="dongxe.html#dx-huracan">HURACAN</a>
+                <li><a href="dongxe.html#dx-aventador">AVENTADOR</a>
+                <li><a href="dongxe.html#dx-other">LIMIT VERSION</a>
+              </ul>
+            </li>
+            <li class="liParent1">
+              <a href="chamsocvabaohanh.html">DỊCH VỤ</a>
+              <ul class="ulParent2">
+                <li><a href="phutung.html">PHỤ KIỆN</a>
+                <li><a href="chamsocvabaohanh.html">CHĂM SÓC - BẢO HÀNH</a>
+              </ul>
+            </li>
+            <li class="liParent1">
+              <a href="tintuc.html">TIN TỨC</a>
+            </li>
+            <li class="liParent1">
+              <a href="lienhe.html">LIÊN HỆ</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header> 
+    <br><br><br><br>
+
+    <main>
+      <article>
+        <div class="lh-container">
+          <div class="lh-row">
+            <div class="lh-column">
+        
+              <h2 id="lh-id">Supercar.com</h2>
+              <p>Nếu bạn có nhu cầu đặt hàng các loại xe, phụ kiện, phụ tùng xe độc đáo, để biết thêm thông tin chi tiết hãy gửi ngay thông tin cho chúng tôi biết, để chúng tôi hỗ trợ tư vấn và hướng dẫn chi tiết, Cung cấp thông tin mới nhất, nhanh nhất, chính xác nhất cho bạn.</p>
+            
+              <div class="lh-class1" style="margin-top: 10px;">
+                <ul>
+                  <li>
+                    <div class="lh-iconAwesome">
+                      <i class="fas fa-map-marked-alt" aria-hidden="true"></i>
+                    </div>
+                    <p id="lh-p">Địa chỉ:&nbsp;Khoa CNTT&TT, đại học Cần Thơ, phường An Khánh, quận Ninh Kiều, Cần Thơ, Việt Nam.</p>
+                  </li>
+                  <br>
+                  <li>  
+                    <div class="lh-iconAwesome">
+                      <i class="fas fa-mobile-alt" aria-hidden="true"></i>
+                    </div>
+                    <p id="lh-p">Điện thoại: 0999 999 999</p>
+                  </li>
+                  <br>
+                  <li>
+                    <div class="lh-iconAwesome">
+                      <i class="fa fa-phone" aria-hidden="true"></i>
+                    </div>
+                    <p id="lh-p">Hotline: 0809 897 799</p>
+                  </li>
+                  <br>
+                  <li>
+                    <div class="lh-iconAwesome">
+                      <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </div>
+                    <p id="lh-p">Email: LTWGroup2@gamil.com</p>
+                  </li>
+                  <br>
+                  <li> 
+                    <div class="lh-iconAwesome">
+                      <i class="fas fa-angle-double-right" aria-hidden="true"></i>
+                    </div>
+                    <p id="lh-p">Tư vấn 24/7. Hỗ trợ nhiệt tình</p>
+                  </li><br>
+                </ul>
+              </div> 
+            </div>
+            
+            <div class="lh-column">
+              <div class="lh-form">
+                <h2 id="lh-id">Thông tin liên hệ</h2>       
+                <form action="thongtin.php" enctype="application/x-www-form-urlencoded " method="POST" onsubmit="return frmValidate5(this)">
+                  <div class="lh-form-group">
+                    <label>Họ và Tên</label><br><br>
+                    <input required type="text" minlength="6" name="name" placeholder="Vui lòng nhập họ & tên (tối thiểu 6 ký tự)" class="lh-form-control">
+                  </div>      
+                  <div class="lh-form-group">
+                    <label>Email</label><br><br>
+                    <input required type="email" name="email" class="lh-form-control" placeholder="Mời bạn nhập email" pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,8}">
+                  </div>  
+                  <div class="lh-form-group">
+                    <label>Điện thoại</label><br><br>
+                    <input required type="tel" maxlength="10" name="phone" class="lh-form-control" placeholder="10 ký tự số" pattern="[0-9]{10,10}">
+                  </div>
+                  <div class="lh-form-group">
+                    <label>Nội dung</label><br><br>
+                    <textarea minlength="10" rows="7 " cols="96 " type="text " placeholder=" Nội dung cần liên hệ "></textarea>
+                  </div> 
+                  <div class="lh-form-group">
+                    <label>Tệp</label><br><br>
+                    <input type="file">
+                  </div>   
+                  <button type="submit" class="lh-gui">Gửi thông điệp</button>   
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>                            
+    </main>
+
+    <footer>
+      <div class="divFooter1">
+        <div>
+          <h3 class="h3Footer1 footer-straight-line">GIỚI THIỆU</h3>
+          <p>SUPER CAR là công ty mua bán dòng xe Lamborgini hàng đầu Việt Nam. Với hơn 40 năm kinh nghiệm dày dặn, chúng tôi đảm bảo sẽ mang đến cho bạn những mẫu xe tốt và thời thượng nhất hiện nay. Trên Website SUPER CAR, chúng tôi liên tục cập nhật những mẫu xe Lamborgini mới nhất cùng với các bài đánh giá, bài báo cũng như các dịch vụ liên quan đến dòng xe Lamborgini.</p>
+        </div>
+        <div class="superCarFooter-link1">
+          <h3 class="footer-straight-line">SUPER CAR</h3>
+          <ul class="link1 footerLink">
+            <li><a href="trangchu.html">Trang Chủ</a></li>
+            <li><a href="gioithieu.html">Giới Thiệu</a></li>
+            <li><a href="dongxe.html">Dòng Xe</a></li>
+            <li><a href="dichvu.html">Dịch Vụ</a></li>
+            <li><a href="tintuc.html">Tin Tức</a></li>
+            <li><a href="lienhe.html">Liên Hệ</a></li>
+          </ul>
+        </div>
+        <div class="superCarFooter-link2">
+          <h3 class="footer-straight-line">LIÊN HỆ</h3>
+          <p><i class="fas fa-map-marker-alt"></i> Địa chỉ: Khoa CNTT&TT, đại học Cần Thơ, phường An Khánh, quận Ninh Kiều, Cần Thơ, Việt Nam</p>
+          <p><i class="fas fa-globe-americas"></i> Website: www.supercar.com</p>
+          <p><i class="fas fa-envelope"></i> Email: LTWGroup2@gamil.com</p>
+          <p><i class="fas fa-phone-alt"></i> Hotline: 0999 999 999</p>
+        </div>
+        <div class="superCarFooter-link3">
+          <h3 class="footer-straight-line">THEO DÕI</h3>
+          <i class="fab fa-facebook-square fa-2x"></i>
+          <i class="fab fa-twitter-square fa-2x"></i>
+          <i class="fab fa-instagram-square fa-2x"></i>        
+          <i class="fab fa-youtube-square fa-2x"></i>
+        </div>
+      </div>
+      <div class="footer-line">
+      </div>  
+      <div class="divFooter2">
+        <p>Website chúng tôi không bán hàng trực tiếp, nếu muốn mua sản phẩm, vui lòng liên hệ với chúng tôi.</p>
+        <p>&copy Bản quyền thuộc về <b>SUPPERCAR</b></p>
+      </div>
+    </footer>
+  </body>
+</html>

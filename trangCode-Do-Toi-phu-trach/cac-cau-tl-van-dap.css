@@ -1,0 +1,45 @@
+/*     để sửa css nhanh đúng thì cho chạy trang html trên cốc cốc, rồi kiểm tra chọn từng phần tử muốn thay đổi. */
+
+/* gửi dl nút tìm kiếm có javascript thì dùng button  */
+
+/*gửi dl đăng ký đến "saveform.php" tức là chỗ action="saveform.php" là xong */
+            <form method="get" action="timkiem.html" onSubmit="return handleSearchSubmit(event)">
+                <input type="text" placeholder="nhập nội dung cần tìm..." id="txtSearch" name="txtSearch">
+                <button type="submit"><i id="tc-id1" class="fa fa-search" aria-hidden="true"></i></button>
+               
+            </form>
+
+  text-transform: uppercase;  /* biến đổi HOA/thường */
+
+/* đổi màu nền nút tìm kiếm hover khi ghê chuột vào do nút tìm kiếm nằm trong thẻ a     */
+a:hover {
+  color: pink;
+}
+/*  ký tự đặc biệt khoảng trắng &nbsp   */
+
+
+/* sửa màu radial-gradient xuyên tâm hoặc linear-gradient */
+#dn-id {
+  background: radial-gradient(#cddc39, #fff);
+  
+  background-image: linear-gradient(to right, white, #b6baba);
+}
+
+/* đổi màu gradient */
+h1:after {
+    background: radial-gradient(#cddc39, #fff);
+    width: 200px;
+    height: 3px;
+    margin: 12px 0px 16px 0px;
+    display: block;
+    position: relative;
+    left: 50%;
+    content: "";
+    transform: rotateX(-12deg) translateX(-50%);
+}
+
+/* */
+
+/* đổi màu nền khung placeholder="vui lòng nhập email" thì viết style="background-color: màu " đặt trong thẻ mở hoặc trong thẻ khong có thẻ đóng là xong */
+<input style="background-color: blue" required type="email" name="email" class="dk-form-control" 
+pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,8}" placeholder="Mời bạn nhập email" />
